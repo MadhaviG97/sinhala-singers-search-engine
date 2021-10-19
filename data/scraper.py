@@ -2,87 +2,65 @@ from math import sin
 import requests as req
 from bs4 import BeautifulSoup
 from googletrans import Translator
+from google.transliteration import transliterate_word
 import wikipedia
 import json
 import pandas as pd
+import re
 
-singers = pd.read_csv('singers.csv')['0'].values
-
-documents = {}
 translator = Translator()
-for singer in singers:
-    page_object = wikipedia.page(singer)
-    
-    dictionary = {
-        "name" : translator.translate(page_object.original_title, dest='si', src='en').text,
-        "bio": translator.translate(page_object.content, dest='si', src='en').text,
-    }
 
-    documents[translator.translate(page_object.original_title, dest='si', src='en').text] = dictionary
+links = pd.read_csv('links.csv')['0'].values
 
+def remove_sinhala(string):
+    i=0
+    for letter in string:
+        if ord(letter)>3000:
+            break
+        i+=1
 
-# Serializing json 
-json_object = json.dumps(dictionary, indent = 4)
-  
-# Writing to sample.json
-with open("document.json", "w") as outfile:
-    outfile.write(json_object)
+    string = string[:i].strip()
+    return string
+document = {}
+for link in links[:5]:
+    res = req.get(link)
+    soup = BeautifulSoup(res.text, 'lxml')
 
-# no_bio=0
-# bio_fields = {"Born"}
-# for link in links[:3]:
-#     document = {}
-#     res = req.get('https://en.wikipedia.org/'+link)
-#     soup = BeautifulSoup(res.text, 'lxml')
+    bio = soup.find('table', {'class':'biography'}) or soup.find('table', {'class':'infobox vcard plainlist'})
+    if bio!=None:
+        name = soup.find('h1', {'id':'firstHeading'}).text
+        name = remove_sinhala(name)
+        print(name)
+        
+        summary = bio.find_next_sibling().text
+        if summary.strip() == 'Musical artist':
+            summary = wikipedia.page(name).summary
 
-#     bio = soup.find('table', {'class':'biography'}) or soup.find('table', {'class':'infobox vcard plainlist'})
-#     if bio!=None:
-#         name = translate(bio.th.text)
-#         print("***************", name, "***************")
+        name = transliterate_word(name, lang_code='si')[0]
+        details = {'name': name}
 
-#         for tr in bio.find_all('tr'):
-#             th, td = tr.th, tr.td
+        for tr in bio.find_all('tr'):
+            th, td = tr.th, tr.td
+            if th!=None and td!=None:
+                field = th.text
+                if field == 'Genres':
+                    genres = td.find('div')
+                    genre_list = []
+                    if genres!=None:
+                        genres = genres.find('ul').find_all('li')
+                        for i in genres:
+                            genre_list.append(i.text.strip().lower())
+                    details[field] = genre_list
 
-#             if th!=None and td!=None:
-#                 field = translate(th.text)
-#                 bio_fields.add(field)
-                
-#                 more = td.find('div', {'class': 'hlist-separated'})
-#                 values = []
-#                 if more != None:
-#                     for li in more.ul:
-#                         values.append(translate(li.text))
-#                 else:
-#                     values.append(translate(td.text))
-#                 document[field] = values
-#         write_to_file(document, name)
-#     else:
-#         no_bio+=1
+                elif field=='Birth' or field=='Born':
+                    year = re.findall(r'\b\d+\b', td.text)
+                    year = list(map(int, year))
+                    year = max(year) if len(year)>0 else '-'
+                    details['Birth'] = year
 
+        summary = translator.translate(summary, dest='si', src='en').text
+        details['summary'] = summary
+        document[name] = details
 
-# # translator = Translator()
-# # print(translator.translate('Good morning', dest='si', src='en'))
-
-# # # Data to be written
-# dictionary ={
-#     "name" : name,
-#     "age" :,
-#     "Born":,
-#     "Died":,
-#     "Education":,
-#     "Occupation":,
-#     "Spouses":,
-#     "Children":,
-#     "Genres":,
-#     "Instruments":,
-#     "Year active":,
-#     "Labels":,
-#     "Associated acts":
-# }
-
-# # Serializing json 
-# json_object = json.dumps(dictionary, indent = 4)
-  
-# # Writing to sample.json
-# with open(name+".json", "w") as outfile:
-#     outfile.write(json_object)
+with open('data.json', 'w') as outfile:
+    json.dump(document, outfile)
