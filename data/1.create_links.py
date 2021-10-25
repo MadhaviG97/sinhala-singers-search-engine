@@ -1,7 +1,6 @@
 from math import sin
 import requests as req
 from bs4 import BeautifulSoup
-from googletrans import Translator
 import pandas as pd
 import wikipedia
 

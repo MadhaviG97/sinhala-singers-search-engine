@@ -1,0 +1,905 @@
+{
+    "e9fea5f0-dd47-4076-a57f-ab427bae9bc8": 
+    {
+        "name": "Nadeeka Guruge", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Nadeeka Guruge is one of the most influential composers in Sri Lankan music."
+    }, 
+    "f289e441-8250-467f-b31c-3a0531dfd66e": 
+    {
+        "name": "M. S. Fernando",
+        "genres": ["pop", "baila", "rhythm and blues", "country music"], 
+        "birth": 1936, 
+        "summary": "Mahagamage Samson Fernando, popularly as M. S. Fernando, was a Sri Lankan singer and musician. He is a major player in the development of Baila music and was widely popular among Sri Lankan audiences commonly referred to as the 'Baila Chakkrawarthi' (Baila emperor)."
+    }, 
+    "1a22d357-830a-4457-8c92-ea9e8b03bfd1": 
+    {
+        "name": "J. A. Milton Perera", 
+        "genres": ["pop", "soul", "classical music", "hindustani music"], 
+        "birth": 1938, 
+        "summary": "Jayasinghe Arachchige Milton Perera, popularly known as Milton Perera, was a singer, composer and playback singer of Sri Lankan cinema. One of the most respected artists in Sri Lanka, Milton Perera rendered his voice to diverse array of artists as a playback singer for many films in a career spanned for more than three decades. He was the leading playback singer of Sri Lankan cinema during the 1960s and 1970s."
+    }, 
+    "17f3087d-d5ac-45f0-bd81-af88ab3912e5": 
+    {
+        "name": "Rohana Weerasinghe", 
+        "genres": [], 
+        "birth": 1949, 
+        "summary": "DR. Rohana Weerasinghe is a Sri Lankan musician, composer and singer."
+    }, 
+    "3a3148b5-2ea9-4d9f-a371-ee119d2d79f5": 
+    {
+        "name": "W. D. Amaradeva", 
+        "genres": [], 
+        "birth": 1927, 
+        "summary": "Sri Lankabhimanya Wannakuwattawaduge Don Albert Perera, better known by his adopted name Amaradeva, was a prominent Sri Lankan vocalist, violinist and composer. Primarily using traditional instruments like sitars, tablas and harmoniums, Amaradeva incorporated Sinhala folk music with Indian ragas in his work. Many consider Pandit Amaradeva's contribution to the development of Sinhala music as unmatched; hence, he is occasionally cited as the 'Maestro of Sri Lankan Music'.In the mid-1950s, Amaradeva in his Janagayana project consulted experts of the Kandyan dance tradition like Panibharatha, Kiriganita, Gunamala, Ukkuva and Suramba in his path to understand what constituted Sinhala folk music. Noting that it mostly revolved around a single melody, he decided to add verses that would lead up to the central melody which would now be a chorus thus forming two parts (unseen earlier in traditional Sri Lankan music) removing restrictions that had existed earlier. In doing so, Amaradeva created a uniquely Sinhalese music style that stayed true to folk tradition while incorporating outside influences. His work was vital in the creation of the sarala gee genre practised subsequently by artists like Sanath Nandasiri, Victor Ratnayake, T.M. Jayaratne, Sunil Edirisinghe and Gunadasa Kapuge etc.Pandit Amaradeva had been the recipient of numerous awards including the Philippine Ramon Magsaysay Award (2001), Indian Padma Sri Award (2002) and Sri Lankan 'President's Award of Kala Keerthi' (1986) and Deshamanya Award (1998). In 2003 the French government awarded him the prestigious honour; Ordre des Arts et des Lettres. Notably he still remains the most popular artist as confirmed by Nielsen Media Research findings. He has also represented Sri Lanka in many forums including the UNESCO 1967 Manila Symposium. The University of Kelaniya conferred on him the Degree of Doctor of Philosophy (Fine Arts) Honoris Causa in 1991 and the University of Ruhuna and University of Peradeniya conferred on him the Degree of Doctor of Letters, Honoris Causa in 1993 and 1998.In 1972, Pandit Amaradeva composed the music for the Maldivian National Anthem (Gaumii salaam) at the request of Maldivian Government.Amaradeva died at the age of 88 on 3 November 2016 due to a heart failure. A state funeral was held  by the government with a week of national mourning declared."
+    }, 
+    "57be72fe-6354-459f-9b34-50924f844f5e": 
+    {
+        "name": "Sunil Edirisinghe", 
+        "genres": [], 
+        "birth": 1949, 
+        "summary": "Patikirige Sunil Jayapreethi Edirisinghe is a Sri Lankan classical musician. Edirisinghe won the presidential award for playback singing in 1983 for 'Maya Miringuva Pirunu Lo Thale' from Adhishtanaya. He was awarded the Swarna Sankha Award for playback singing in 1988 for 'Thurulaka Hurathal' from Mangala Thagga and in 1990 for 'Walakulak Gena Muwa Karamu' from Saharave Sihinaya. He has also won the Sarasaviya Award for playback singing in 1988 for 'Thidasa Pure' from Sandakada Pahana and in 2002 for 'Poronduwa' from Poronduwa."
+    }, 
+    "4eaf9170-db0b-4851-ae17-4b2aad2f5a91": 
+    {
+        "name": "Freddie Silva", 
+        "genres": [], 
+        "birth": 1938, 
+        "summary": "Haupe Liyanage Athukorala Morris Joseph Ranabahu, popularly as Freddie Silva (06 February 1938  29 October 2001), was a Sri Lankan film actor, and playback singer, who appeared from 1973 until 2002. Freddie was known for being one of the most popular Sri Lankan comedians of the 1960s, 1970s and 1980s. He appeared in over 400 films and Produced 2 films, of which 300 were screened at the celebration of fifty years in Sinhala Cinema."
+    }, 
+    "d1ad3265-a97f-45d3-a8d5-569de3b4edae": 
+    {
+        "name": "Nihal Nelson", 
+        "genres": ["pop", "soul", "rhythm and blues", "baila"], 
+        "birth": 1946, 
+        "summary": "Nihal Nelson (born 9 January 1946; Sinhala: ), is a Sri Lankan vocalist, songwriter and composer. One of the most influential singers in Sri Lanka considered the undefeated on the concert stage, Nelson holds the record for the most albums recorded by a Sri Lankan artist with 113 albums."
+    }, 
+    "d8eee3be-0ff8-4e1f-9262-8b22248c9e0c": 
+    {
+        "name": "Henry Caldera", 
+        "genres": [], 
+        "birth": 1937, 
+        "summary": "Henry Caldera (19 August 1937  11 October 2006) was a Sri Lankan singer, songwriter, and musician."
+    }, 
+    "a41fe47a-cf5a-496c-bb88-db615f21289c": 
+    {
+        "name": "Mercy Edirisinghe", 
+        "genres": [], 
+        "birth": 1945, 
+        "summary": "Donna Mercy Nalini Edirisinghe (18 December 1945  17 March 2014) was an actress in Sri Lankan, cinema, theater and television as well as a singer. She is also well known for her role in numerous comedic television shows and radio dramas, the most famous of which is a radio program titled 'Vinoda Samaya', in which she acts alongside Annesly Dias, Berty Gunattileke and Samuel Rodrigo. She began her singing career in 1964 from the 'Nawaka Madala' song contest and became a stage actress in 1966. Her most famous play was a musical by Lucien Bulathsinhala, titled Tharavo Igilethi. Composed by Gunadasa Kapuge, 'Made Lagina Tharawan' from the soundtrack of the play became her most successful single. "
+    }, 
+    "c3f16cb8-52a2-4848-bfa1-bbee22a9cd6c": 
+    {
+        "name": "Namal Udugama", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1967, 
+        "summary": "Prasanna Namal Udugama (born October 21, 1967  ) is a Sri Lankan singer, composer and songwriter. One of the most popular artists in Sri Lanka, before the era of reality shows, he is regarded as a symbolic icon in modern Sri Lankan music industry. The health issues in 2014 made him to slow his singing career. Udugama recovered well from a successful liver transplant in mid-2015."
+    }, 
+    "464accb4-5892-4a26-a06c-4f3d7d251d4a": 
+    {
+        "name": "Bathiya and Santhush", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Bathiya & Santhush, also known as BNS, are a Sri Lankan pop duo consisting of Bathiya Jayakody (born on December 22, 1976)  and Santhush Weeraman (born on September 5, 1977), who met while at the 'Mary Anne David School of Vocal Music' in Colombo (training mainly under the categories of classical and show tunes). They both were born in Colombo, Sri Lanka. They have been one of the most commercially successful music acts in Sri Lanka in the last two decades.Bathiya Jayakody was educated at Ananda College, Colombo while Santhush Weeraman was educated at Royal College, Colombo. Santhush comes from a musical family, his brother Dushyanth Weeraman is also a popular singer in Sri Lanka.Since the inception of their act in 1998, they have over 50 number-one hit singles, six platinum selling mainstream albums, four commercially successful EPs and countless movie soundtracks. BNS are one of the biggest musical acts to hit the Sri Lankan musical scene since the 1990s, mixing Sinhala, Tamil, and English rap verses in their originals, while they have also mixed Hindi rap verses in their folkhop remixes bringing out their contemporary style and the music industry in Sri Lanka. BNS became the only Sri Lankan hip hop act to feature Indian singers, namely Hariharan (in the song Yaalpanamen), Asha Bhosle (Dedunna Sedi) and Sonu Nigam (in the song Aachale). BNS is also the only Sri Lankan artistes to have albums under both Sony BMG & Universal Music India.Having performed in over 2000 concerts in Sri Lanka and abroad, BnS marked significant success with their own concert tour series 'Neththara Live' with 120 concerts (2005-2008), 'Shaheena Live' 40 concerts (2009-2011), 'Sarasihina Live' 150 concerts (2011-2014), 'BNS Up Close & Personal' 50 Concerts (2015-2018) and their latest concert series 'Oba Nisa - Celebrating 20 Years of Music' which was launched in 2019.Starting from a musical duo from their home during their early days, BnS Currently are the primary share holders of the BNS Production Group which houses some of the most successful companies in the Sri Lankan entertainment industry companies  Showtown Entertainment event management & production, Saregama Music Digital Audio Production, Saregama Films, Saregama Digital Content Acquisition & Management and Leap Strategic Concepts."
+    }, 
+    "3962f9b0-5bc6-45c0-b8db-466dcfb301eb": 
+    {
+        "name": "Falan Andrea", 
+        "genres": ["pop", "soul", "rock", "classical", "jazz"], 
+        "birth": 1995, 
+        "summary": "Falan Andrea Jansen is a Sri Lankan singer and performer. She began her career in music after winning the title in Derana Dream Star season IX. She is a versatile singer of many genres."
+    }, 
+    "e2a3c328-5f50-4936-9d58-4aae9c120ce8": 
+    {
+        "name": "Namal Udugama", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1967, 
+        "summary": "Prasanna Namal Udugama (born October 21, 1967) is a Sri Lankan singer, composer and songwriter. One of the most popular artists in Sri Lanka, before the era of reality shows, he is regarded as a symbolic icon in modern Sri Lankan music industry. The health issues in 2014 made him to slow his singing career. Udugama recovered well from a successful liver transplant in mid-2015."
+    }, 
+    "6a31a580-03b4-4c65-8978-2113afab5f33": 
+    {
+        "name": "J. P. Chandrababu", 
+        "genres": [], 
+        "birth": 1927, 
+        "summary": "Joseph Panimayadas Chandrababu Rodriguez  (19271974) was an Indian film comedian, actor, director, singer and dancer, whose Chaplinesque style on-screen movements and singing style made him popular from the late 1940s to the early 1970s. He had a mastery of the Madras Bashai, a dialect unique to the Madras region.His slapstick style of comedy has been emulated by subsequent actors. Many of his songs have remained popular."
+    }, 
+    "4a631a86-6a40-4050-9a1b-f8048cab47eb": 
+    {
+        "name": "Sachith Peiris", 
+        "genres": [], 
+        "birth": 1986, 
+        "summary": "Sachith Peiris (born October 04, 1986) is a Sri Lankan award-winning music director, playback singer and a video director."
+    }, 
+    "2d170e9e-5504-44e1-b6e8-be2400f926eb": 
+    {
+        "name": "Gaurav Dagaonkar", 
+        "genres": [], 
+        "birth": 1982, 
+        "summary": "Gaurav Dagaonkar Indian Entrepreneur and the founder and Chief Executive Officer (CEO) at Songfest. He is also known as a popular music director, songwriter and singer. As a music director, Gaurav's first release was the movie Lanka, which released on 9 December 2011. As a business executive, Gaurav turned his passion for music by starting Songfest, one of India's premier artiste labels."
+    }, 
+    "e6e07e8e-5d1d-4bab-b075-f884553d40a2": 
+    {
+        "name": "Uresha Ravihari", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1982, 
+        "summary": "Uresha Ravihari Wickremasinghe, (born 26 June 1982; as   [Sinhala]), is a Sri Lankan songstress. Considered one of the leading female playback singers in Sri Lankan Sinhala cinema, Ravihari has won numerous awards at local film and television festivals including Sarasaviya Awards for Best Vocalist in three consecutive years."
+    }, 
+    "70d6461f-bfff-4722-8a4a-156c78c50e73": 
+    {
+        "name": "Iraj Weeraratne", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Iraj Weeraratne (born February 21, 1981) is a Sinhalese R&B and hip hop artist and music producer. Iraj had a television show on Derana TV called 'Iraj Show'. His first South Indian composition together with Vijay Anthony featured in the movie Veittakarran starring Kollywood star Vijay ranked number one in the Chennai Charts."
+    }, 
+    "1c58987f-fcf9-4be4-b8e7-10ca83b9cbaf": 
+    {
+        "name": "Anil Mihiripenna", 
+        "genres": [], 
+        "birth": 1933, 
+        "summary": "Shashthrapathi Anil Mihiripenna (10 August 1933  10 June 2017) was a Sri Lankan classical musician, who played the bansuri, Esraj an Indian bamboo flute.He played in the North Indian tradition and was the first Sri Lankan to obtain degrees in both flute and esraj. Running his Sharadha Kala Niketanaya, he endeavoured to teach, develop and popularise Indian classical music in Sri Lanka for the last forty years."
+    }, 
+    "92b1e536-d109-4caa-a9b3-168459171c12": 
+    {
+        "name": "Prince Udaya Priyantha", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1970, 
+        "summary": "Prince Udaya Priyantha (13 June 1970-8 June 2017) was a Sri Lankan singer, composer and songwriter."
+    }, 
+    "6b664975-5758-4ef8-9dc7-575f88061475": 
+    {
+        "name": "Tharanga Goonetilleke", 
+        "genres": [], 
+        "birth": null, 
+        "summary": "Tharanga Goonetilleke is a soprano opera singer who was born in Badulla, Sri Lanka, but grew up in Ratmalana. Her singing ability was noticed by a music professor from Converse College while he was visiting Sri Lanka. She is the first woman from Sri Lanka to attend the Juilliard School, one of the world's leading music schools. She lives in New York City, and her career in opera has received international attention."
+    }, 
+    "20cc8d8c-5ae0-4c45-9299-3457aadf55bc": 
+    {
+        "name": "Annesley Malewana", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": null, 
+        "summary": "Annesley Malewana (Sinhala pronunciation [\u02c8\u00e6n\u0259sli \u02c8ma\u02d0l\u0259v\u0259n\u0259]) is a Sri Lankan musician. Often considered 'The Prince of Sinhala Pop', Malewana is well known for being a master of contemporary Baila worked with popular musical bands The Moonstones and Super Golden Chimes."
+    }, 
+    "47d7a29f-e13d-4c1a-b51c-7049c2ac34f4": 
+    {
+        "name": "Clarence Wijewardena", 
+        "genres": ["pop", "playback singing", "sri lankan music", "soft rock"], 
+        "birth": 1943, 
+        "summary": "Vithana Kuruppu Arachchilage Clarence Arthur Somasinghe Wijewardena JP (3 August 1943 - 13 December 1996) was a Sri Lankan singer, composer and musician. Considered one of the most respected musicians in Sri Lanka, Wijewardena revolutionized Sri Lankan Sinhala Pop Music with the use of the electric guitar in Sinhala music, in the 1960s. Due to his influence on Sinhala pop music, he is often named as the father of Sri Lankan pop music."
+    }, 
+    "593dc81a-9146-46c3-afdb-e9d2d25a3a21": 
+    {
+        "name": "Abhisheka Wimalaweera", 
+        "genres": ["bhangra", "soft rock"], 
+        "birth": 1988, 
+        "summary": "Suhasini Abhisheka Wimalaweera (born 11 November 1988) is a Sri Lankan singer, film playback singer and a lyricist. She gained recognition as a playback singer after performing in the romantic drama film Wassanaye Sanda, a film directed by Udayakantha Warnasuriya.She was also the playback singer for Challenges , Rupantharana and Sinasuna Adaren."
+    }, 
+    "d175aeb7-5373-4e03-85d5-207016fae27d": 
+    {
+        "name": "Ajith Bandara", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": null, 
+        "summary": "Ajith Bandara is a Sri Lankan singer. He is popular in the country for winning the first season of the singing reality contest Sirasa Superstar in 2006."
+    }, 
+    "bb02954d-fb88-456c-9886-45ee66176b84": 
+    {
+        "name": "Gunadasa Kapuge", 
+        "genres": ["pop", "soul", "rhythm and blues", "country music"], 
+        "birth": 1945, 
+        "summary": "Ellamulla Kapuge Gunadasa (7 August 19453 April 2003)  popularly known as Gunadasa Kapuge, was a Sri Lankan singer, musician, music director and playback singer. He was well known among Sri Lankans due to the philosophical background of his music renditions and lyrics selected for his work."
+    }, 
+    "727093aa-d73d-4327-92d7-9529206ce9ff": 
+    {
+        "name": "My Vitriol", 
+        "genres": ["alternative rock", "nu gaze"], 
+        "birth": "None", 
+        "summary": "My Vitriol are a British alternative rock band, formed in 1999 in London. The band currently comprises singer and guitarist Som Wardner, drummer Ravi Kesavaram, guitarist Seth Taylor and bassist Tatia Starkey. The band had success with their debut album Finelines in 2001 which spawned three Top 40 hit singles in the UK Singles Chart, before announcing a hiatus in 2002. The band were credited as spearheading a new shoegazing movement, dubbed nu gaze. They released new material in 2007, and released limited fanbase album 'The Secret Sessions' in October 2016. The band name is taken from the Graham Greene novel Brighton Rock."
+    }, 
+    "72bed074-eae3-4b66-b7aa-6f0d14daf2b4": 
+    {
+        "name": "Amarasiri Peiris", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1946, 
+        "summary": "Senadheerage Amarasiri Peiris (born 21 July 1946) is a Sri Lankan singer. One of the most honored singers of Sri Lanka, Peiris is a well known violinist and a vocalist."
+    }, 
+    "de44c907-7325-4f8b-9a6a-d3299976c5c9": 
+    {
+        "name": "Lahiru Perera", 
+        "genres": [], 
+        "birth": 1984, 
+        "summary": "Lahiru Perera (born 18 April 1984) also known by his stage name La Signore is a Sri Lankan singer, musician and music producer who came to limelight with his 2008 breakthrough Hit single 'Rambari'. He was born and raised in Kehelbaddara, Udugampola.His latest ventures include a perfume line named  La Signore The Fragrance perfumes and colognes."
+    }, 
+    "56be607d-2620-479c-aa8f-18bb78133adb": 
+    {
+        "name": "Neela Wickramasinghe", 
+        "genres": [], 
+        "birth": 1950, 
+        "summary": "Visharada Neela Wickramasinghe is a veteran female singer and a musician in Sri Lanka, who mainly sings in Sinhalese."
+    }, 
+    "b6e447c1-86ef-4a11-946b-982f07bd7dbe": 
+    {
+        "name": "Dhanith Sri", 
+        "genres": [], 
+        "birth": 1994, 
+        "summary": "Dhanith Sri (born 22 December 1994) is a Sri Lankan singer, composer and songwriter. He is considered one of the most popular artists in Sri Lanka. Dhanith entered the mainstream music industry with his 2018 hit 'Pandama'. The alternative rock feel of this song is complemented by his high-pitched vocals as well as the mix of Sri Lankan traditional drum beats and synthesizers. It became number one on TV and radio charts concurrently."
+    }, 
+    "321dce92-a24d-4529-a050-a79b1a1453e3": 
+    {
+        "name": "Premasiri Khemadasa", 
+        "genres": [], 
+        "birth": 1937, 
+        "summary": "Deshamanya Kala Keerthi Dr.Premasiri Khemadasa (25 January 1937  24 October 2008) also known as 'Khemadasa Master' was a Sri Lankan music composer. Exploring the various styles of music around the world Khemadasa endeavoured to develop a unique style of music. He combined Sinhala folk tunes, Hindustani music, Western music and many other streams of music in his compositions while adapting them to fit contemporary music."
+    }, 
+    "adaa203b-376d-46f5-b360-1497550b7018": 
+    {
+        "name": "Edward Jayakody", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1952, 
+        "summary": "Jayakody Arachchige Don Edward Timothy Jayakody (born 6 April 1952), popularly as Edward Jayakody, is a Sri Lankan musician, singer and composer. Jayakody has directed the music for hundreds of Sinhala films and television serials and has also composed many songs for children's programming ('Koppara Koppara').Jayakody won the Swarna Sanka Award in 1987 for Best Male Singer for the film Gedara Budun Amma. He won Best Music Director in 1979 and 1980 for the plays Nidane and Aparadaya Saha Danduwama."
+    }, 
+    "a6ca9fe7-2c23-4e3f-be7c-726f99b48c9d": 
+    {
+        "name": "Chandrasena Hettiarachchi", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": null, 
+        "summary": "Hettiarachchige Chandrasena (born 7 September), popularly as Chandrasena Hettiarachchi, is a Sri Lankan singer. Having emerged from the youth choir as a group singer, Hettiarachchi has been able to show his talents and sang several popular songs such as Mal Mal Vile, Amma Jeewana, Oya Nisa Mage Sina, Kelesaka Keewath and Nawala Annasi."
+    }, 
+    "51ba1437-c4bc-4159-ac3d-fee8efe6176b": 
+    {
+        "name": "The Gypsies (Sri Lankan band)", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "The Gypsies are a Sri Lankan baila band that performs Sinhala and English songs. It has been around since the early 1970s and has a huge fan base across the country. The band was later banned temporarily by the Government of Sri Lanka for a while as the songs carried anti-governmental sentiments."
+    }, 
+    "d55c510b-5edf-42d9-98ec-bbbaa363ad41": 
+    {
+        "name": "Milton Mallawarachchi", 
+        "genres": ["pop", "soul", "rhythm and blues", "country music"], 
+        "birth": 1944, 
+        "summary": "Sumanasiri Mallawarachchi Don (7 April 194410 March 1998 ), popularly known as Milton Mallawarachchi, was a Sri Lankan singer and musician. One of the most respected singers in Sri Lankan music history, Mallawarachchi was a trending act in Sri Lanka for more than a decade, performing nearly a total of 850 songs with over 35 albums. He is also known to be a music composer for most of his songs, a film play-back singer for the silver screen, a talent tabla and sitar player."
+    }, 
+    "5101bbb1-a1e6-4305-9ca1-33542b268fe7": 
+    {
+        "name": "T. M. Jayaratne", 
+        "genres": [], 
+        "birth": 1944, 
+        "summary": "Tennakoon Mudiyanselage Jayaratne, also known as T.M. Jayaratne (born 13 April 1944) in Dodangoda, Sri Lanka is a popular Sri Lankan vocalist and a violinist.He has received the Presidential Award of Sri Lanka in 1978, 1979, 1980 and 1987. In 2006 Jayaratne was awarded the best male singer award at the Raigam Tele Award Festival."
+    }, 
+    "555370e6-10fe-4f89-97b9-d1a28bb42c67": 
+    {
+        "name": "Desmond de Silva", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Desmond de Silva is a Sri Lankan singer and entertainer, noted for his youthful voice that has changed little over four decades of performing, and regarded as the 'King of Baila.' Born in Matara in southern Sri Lanka, De Silva has performed to packed concert halls across the world."
+    }, 
+    "1b9b5ec7-b784-4370-9b00-6ccddb040687": 
+    {
+        "name": "Amarasiri Peiris", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1946, 
+        "summary": "Senadheerage Amarasiri Peiris (born 21 July 1946) is a Sri Lankan singer. One of the most honored singers of Sri Lanka, Peiris is a well known violinist and a vocalist."
+    }, 
+    "54570134-db86-4c4e-94a5-a83b4dbc230d": 
+    {
+        "name": "Bathiya and Santhush", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Bathiya & Santhush, also known as BNS, are a Sri Lankan pop duo consisting of Bathiya Jayakody (born on December 22, 1976)  and Santhush Weeraman (born on September 5, 1977), who met while at the 'Mary Anne David School of Vocal Music' in Colombo (training mainly under the categories of classical and show tunes). They both were born in Colombo, Sri Lanka. They have been one of the most commercially successful music acts in Sri Lanka in the last two decades.Bathiya Jayakody was educated at Ananda College, Colombo while Santhush Weeraman was educated at Royal College, Colombo. Santhush comes from a musical family, his brother Dushyanth Weeraman is also a popular singer in Sri Lanka.Since the inception of their act in 1998, they have over 50 number-one hit singles, six platinum selling mainstream albums, four commercially successful EPs and countless movie soundtracks. BNS are one of the biggest musical acts to hit the Sri Lankan musical scene since the 1990s, mixing Sinhala, Tamil, and English rap verses in their originals, while they have also mixed Hindi rap verses in their folkhop remixes bringing out their contemporary style and the music industry in Sri Lanka. BNS became the only Sri Lankan hip hop act to feature Indian singers, namely Hariharan (in the song Yaalpanamen), Asha Bhosle (Dedunna Sedi) and Sonu Nigam (in the song Aachale). BNS is also the only Sri Lankan artistes to have albums under both Sony BMG & Universal Music India.Having performed in over 2000 concerts in Sri Lanka and abroad, BnS marked significant success with their own concert tour series 'Neththara Live' with 120 concerts (2005-2008), 'Shaheena Live' 40 concerts (2009-2011), 'Sarasihina Live' 150 concerts (2011-2014), 'BNS Up Close & Personal' 50 Concerts (2015-2018) and their latest concert series 'Oba Nisa - Celebrating 20 Years of Music' which was launched in 2019.Starting from a musical duo from their home during their early days, BnS Currently are the primary share holders of the BNS Production Group which houses some of the most successful companies in the Sri Lankan entertainment industry companies  Showtown Entertainment event management & production, Saregama Music Digital Audio Production, Saregama Films, Saregama Digital Content Acquisition & Management and Leap Strategic Concepts."
+    }, 
+    "5acb0598-8d08-4d00-b60c-cd23831a9711": 
+    {
+        "name": "R. Muttusamy", 
+        "genres": [], 
+        "birth": null, 
+        "summary": "Ramaya Muttusamy (5 January 1926  27 June 1988) was a prolific Sri Lankan music director and singer. He handled the music for most of K. Gunaratnam's productions.Muttusamy was born on 5 January 1926, in Nagercoil, Tamil Nadu, India, the only son of virtuoso musician Ramaya Baghwather. At a young age, Muttusamy was introduced to the violin and mastered the instrument by the age of ten."
+    }, 
+    "36821a0b-1606-4719-8d7f-b486d5bd2ca9": 
+    {
+        "name": "Jackson Anthony", 
+        "genres": [], 
+        "birth": 1958, 
+        "summary": "Conganige Joseph Malsi Jackson Anthony (born July 8, 1958 as  ), commonly known as Jackson Anthony, is an actor in Sri Lankan cinema, theater and television. One of the most popular artists in Sri Lanka, Anthony won the award for the Best Actor for record sixteen times. Primarily active as an actor all three media, he has appeared before the public in versatile forms; director, producer, singer, screenwriter, television host, novelist, columnist, lyricist, historian and traveller."
+    }, 
+    "644dafd1-05a9-4bbd-b4ed-116dae495954": 
+    {
+        "name": "Rohana Weerasinghe", 
+        "genres": [], 
+        "birth": 1949, 
+        "summary": "DR. Rohana Weerasinghe is a Sri Lankan musician, composer and singer."
+    }, 
+    "d6a7f915-2c9f-4827-b516-8d027d84975a": 
+    {
+        "name": "Mohammed Gauss", 
+        "genres": [], 
+        "birth": null, 
+        "summary": "Mohammed Gauss also known as Mohamed Ghouse, was a Sri Lankan film music composer. His compositions for Sinhala cinema in the 1950s are credited by music critics as having been influential in developing a Sri Lankan style of film composition distinct from that of Indian films."
+    }, 
+    "40fa5f2d-1e0e-4948-9416-c863673c7894": 
+    {
+        "name": "Sunil Perera", 
+        "genres": ["pop", "soul", "rhythm and blues", "baila", "western cha-cha", "rock", "hip hop", "reggae"], 
+        "birth": 1952, 
+        "summary": "Uswatta Liyanage Ivor Sylvester Sunil Perera (14 September 1952  6 September 2021), popularly as Sunil Perera, was a Sri Lankan vocalist, guitarist, songwriter and composer. Described as one of the most famous singers in the country, Perera was the leader and the lead vocalist of The Gypsies. He was associated with Sri Lanka's baila genre, and gained the nickname 'Baila Chakravarthy'."
+    }, 
+    "ab237def-b34c-49f8-9de1-87aa9457d52b": 
+    {
+        "name": "Kasun Kalhara", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Kasun Kalhara Jayawardhana (born 3 November 1981), known professionally as Kasun Kalhara, is a Sri Lankan singer, musician, vocal coach and record producer. During his musical career, Kasun has released three albums, Haritha Nimnaye, Radical Premaya and Romantic Opera. He is one of the biggest and best-selling music artists in Sri Lanka."
+    }, 
+    "9bff612f-3fc9-4bcb-8267-787597b8c5cb": 
+    {
+        "name": "Sisira Senaratne", 
+        "genres": ["soul", "indian classical music"], 
+        "birth": 1935, 
+        "summary": "Sisira Senaratne (29 March 1935  4 February 2015), was a Sri Lankan singer and lyricist also worked as a playback singer in Sinhala cinema. A career spanned for more than six decades, Senaratne has sung several popular songs Olu Nelum Neliya, Seeta Diyareli, Nuhuru Nupuruda, Mage Puthuta Mal, and Gaya Geethayan Game. He along with wife Indrani Wijebandara played a pivotal role in ushering in a new era in Sinhala music in the 1950s."
+    }, 
+    "181157ef-ed88-4c1b-b9f8-18ad441d021d": 
+    {
+        "name": "Iraj Weeraratne", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Iraj Weeraratne (born February 21, 1981) is a Sinhalese R&B and hip hop artist and music producer. Iraj had a television show on Derana TV called 'Iraj Show'. His first South Indian composition together with Vijay Anthony featured in the movie Veittakarran starring Kollywood star Vijay ranked number one in the Chennai Charts."
+    }, 
+    "d2d0c731-c9b3-4541-9be7-6792a950b9b8": 
+    {
+        "name": "Shihan Mihiranga Bennet", 
+        "genres": ["pop", "soul", "rhythm and blues", "jazz", "alternative rock"], 
+        "birth": 1985, 
+        "summary": "Shihan Mihiranga Bennett (born 18 March 1985), is a Sri Lankan musician, composer and songwriter. Considered one of the best products of reality shows, Mihiranga often known as the 'Dream Boy' of the youth in Sri Lanka. He became the youth sensation in 2000s after Namal Udugama in 1990s."
+    }, 
+    "119d1c8d-5eb8-433d-9510-01be6c4afc3d": 
+    {
+        "name": "La Bambas", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "'La Bamba' (pronounced [la \u02c8\u03b2amba]) is a Mexican folk song, originally from the state of Veracruz, best known from a 1958 adaptation by Ritchie Valens, a Top 40 hit in the U.S. charts. Valens's version is ranked number 345 on Rolling Stone magazines list of the 500 Greatest Songs of All Time. It is the only song on the list sung in a language other than English.'La Bamba' has been covered by numerous artists, notably by Los Lobos whose version was the title track of the 1987 film La Bamba, a bio-pic about Valens; their version reached No. 1 in the U.S. and UK singles charts in the same year."
+    }, 
+    "a523fb05-2006-46f8-b865-6291e28ce8b6": 
+    {
+        "name": "Annesley Malewana", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": null, 
+        "summary": "Annesley Malewana (Sinhala pronunciation [\u02c8\u00e6n\u0259sli \u02c8ma\u02d0l\u0259v\u0259n\u0259]) is a Sri Lankan musician. Often considered 'The Prince of Sinhala Pop', Malewana is well known for being a master of contemporary Baila worked with popular musical bands The Moonstones and Super Golden Chimes."
+    }, 
+    "ac68f5d8-37f1-4a29-b640-d97882a0618c": 
+    {
+        "name": "Yolande Bavan", 
+        "genres": [], 
+        "birth": 1942, 
+        "summary": "Yolande Bavan (born June 1, 1942) is a Sri Lankan singer and actress."
+    }, 
+    "615816b7-802f-461a-ab55-89ddbab9f303": 
+    {
+        "name": "Indrachapa Liyanage", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Indrachapa Liyanage (born January 13, 1982) is a Sri Lankan singer. He has completed his debut album Abinishkramanaya (renunciation), but it has not been officially released yet."
+    }, 
+    "132f1903-08db-4ac0-a09f-343db04757b9": 
+    {
+        "name": "Gunadasa Kapuge", 
+        "genres": ["pop", "soul", "rhythm and blues", "country music"], 
+        "birth": 1945, 
+        "summary": "Ellamulla Kapuge Gunadasa (7 August 19453 April 2003)  popularly known as Gunadasa Kapuge, was a Sri Lankan singer, musician, music director and playback singer. He was well known among Sri Lankans due to the philosophical background of his music renditions and lyrics selected for his work."
+    }, 
+    "5c4bb0af-4645-4bf9-81f0-b672b3d4d1b4": 
+    {
+        "name": "Sunil Santha", 
+        "genres": ["classical", "soul", "rhythm and blues", "sri lankan music"], 
+        "birth": 1915, 
+        "summary": "Baddaliyanage Don Joseph John (14 April 1915  11 April 1981), popularly known as Sunil Santha, was a renowned and influential Sri Lankan composer, singer and lyricist. He was pivotal in the development of Sinhala music and folk songs in the mid to late 1940s and early 1950s. He composed the beloved soundtracks to Lester James Peries' films Rekava and Sandesaya in 1956 and 1960. In a later comeback, he produced several experimental works."
+    }, 
+    "0013f5a6-e417-4fdd-ac91-fb1b939249e2": 
+    {
+        "name": "Sujatha Aththanayaka", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1942, 
+        "summary": "Kala Suri Visharadha Dr. Mudunkotuwa Munasinghe Arachchige Sujatha Perera  (born 12 May 1942), colloquially known as Sujatha Aththanayaka , is a Sri Lankan songstress and playback singer. She is a prominent playback singer in Sinhala cinema and also in Sri Lankan and Indian Tamil cinema. Considered as the golden bell of Sinhala music, she holds the record for the most number of cassettes produced by a Sri Lankan songstress with more than 115 cassettes in a career spanning more than seven decades. She is the first female music director in Sri Lanka. She contributed for nearly 400 Sinhala films and 20 Sri Lankan-Indian Tamil Films as a playback singer. She sang more than 6000 Sinhala songs and more than 1000 songs in 9 different languages."
+    }, 
+    "7b6be8a8-29bd-4ab5-99b8-bf70966882b8": 
+    {
+        "name": "Ananda Samarakoon", 
+        "genres": [], 
+        "birth": 1911, 
+        "summary": "Egodahage George Wilfred Alwis Samarakoon (13 January 1911 - 2 April 1962) known as Ananda Samarakoon was a Sri Lankan composer and musician. He composed the Sri Lankan national anthem 'Namo Namo Matha' and is considered the father of artistic Sinhala music and founder of the modern Sri Lankan Geeta Sahitya (Song Literature). He committed suicide in 1962, possibly driven by unauthorized changes to lyrics in a composition."
+    }, 
+    "13a57432-88e4-4c9b-91b9-abc6549a05c8": 
+    {
+        "name": "Sanath Nandasiri", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1942, 
+        "summary": "Prof. Sangeeth Nipun Herath Mudiyanselage Sanath Nandasiri (born 15 February 1942) is a Sri Lankan singer, musician, music director, composer and playback singer. He is the current Chancellor of the University of the Visual and Performing Arts in Sri Lanka. One of the iconic singers in Sri Lankan music, Nandasiri has received several awards for his compositions in a career spanning more than six decades. He also composed the music to Sandamalige Kathawa, the first TV serial on Rupavahini."
+    }, 
+    "7365b8e0-73b7-4e08-9945-aa81f4a7cc15": 
+    {
+        "name": "Dinesh Subasinghe", 
+        "genres": [], 
+        "birth": 1979, 
+        "summary": "Dinesh Subasinghe (born 10 July 1979, Colombo) is a Sri Lankan composer, violinist, and music producer. He composed Karuna Nadee, a Buddhist oratorio, and re-introduced a lost, ancient musical instrument known as the ravanahatha to Sri Lanka. He is also a film and television composer whose works integrate western and eastern classical music with electronic music, Buddhist music, folk music, traditional orchestral arrangements, and world music genres. From 2002 to 2009 he led the pop classical band, Dee R Cee Members.In 2015-2016 Dinesh received Sri Lankan attention for the film score of Ho Gaana Pokuna children movie. He has nominated for 10 film awards & won six awards out of that including Derana Film Awards, Presidential Film Awards, Hiru Golden Film Award & Signis Awards, in 2016-2017 . he became the most youngest composer to score music for 90 Tele-dramas for Sri Lankan TV.Dinesh received the Toyp Award Ten Outstanding Young Persons of the World (TOYP) in 2016 for his contribution to Sri Lankan arts. In 2018 he received the 'Asia Inspiration Award' at the 2nd south Asian youth summit. In 2019 he received the 'India Peace Prize' at the 3rd south Asian Youth summit in New Delhi India.His music score for Sudu Andagena Kalu Awidin teledrama & music direction of 'Tone Poem' musical series became very popular in Sri Lanka."
+    }, 
+    "a9bd2be4-3c3e-4e0e-9b48-f92db0da09a4": 
+    {
+        "name": "Stigmata (Sri Lankan band)", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Stigmata is a Sri Lankan heavy-metal band based in Colombo, Sri Lanka, formed in 1998."
+    }, 
+    "eaef330e-737f-499b-88e6-7aa1f6dd35aa": 
+    {
+        "name": "Priya Suriyasena", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1952, 
+        "summary": "M. L. D. Priyadharsha Suriyasena Liyanage (born 27 October 1952), popularly as Priya Suriyasena, is a Sri Lankan singer. Having emerged from the youth choir as a group singer, Suriyasena has been able to show his talents and sang several popular songs such as Atha Ranviman, Mata Wasana, Adaraneeya Neranjana, Ada Davase and Sudu Paravi Rena."
+    }, 
+    "c06602a9-094b-4be4-8947-a1a02d058d51": 
+    {
+        "name": "Vijaya Kumaratunga", 
+        "genres": [], 
+        "birth": 1945, 
+        "summary": "Kovilage Anton Vijaya Kumaranatunga (9 October 1945  16 February 1988), popularly known as Vijaya Kumaratunga, was a Sri Lankan film actor, playback singer and a politician. Regarded as one of the most popular icons in Sri Lankan cinema of all time. He was married to former Sri Lankan President Chandrika Kumaranatunga from 1978 until his assassination in 1988. He was the Founder of Sri Lanka Mahajana Party."
+    }, 
+    "79ef360b-315d-4ea3-8e64-5f30327a94b0": 
+    {
+        "name": "Dushyanth Weeraman", 
+        "genres": [], 
+        "birth": 1980, 
+        "summary": "Dushyanth Weeraman is a Sri Lankan, singer, dancer and actor who gained attention as the winner of the reality talent show 'Sirasa Dancing Stars' in 2008. He is a winner of the 'Ten Outstanding Young Persons of Sri Lanka award in 2013. He is also the younger brother of Santhush Weeraman who is one half of the Sri Lankan pop-duo, Bathiya and Santhush"
+}, 
+"32b85e12-1d09-4165-809f-08139244ea0a": 
+    {
+        "name": "W. D. Amaradeva", 
+        "genres": [], 
+        "birth": 1927, 
+        "summary": "Sri Lankabhimanya Wannakuwattawaduge Don Albert Perera (5 December 1927 - 3 November 2016), better known by his adopted name Amaradeva, was a prominent Sri Lankan vocalist, violinist and composer. Primarily using traditional instruments like sitars, tablas and harmoniums, Amaradeva incorporated Sinhala folk music with Indian ragas in his work. Many consider Pandit Amaradeva's contribution to the development of Sinhala music as unmatched; hence, he is occasionally cited as the 'Maestro of Sri Lankan Music' (Sinhala:Helaye Maha Gandarvaya).In the mid-1950s, Amaradeva in his Janagayana project consulted experts of the Kandyan dance tradition like Panibharatha, Kiriganita, Gunamala, Ukkuva and Suramba in his path to understand what constituted Sinhala folk music. Noting that it mostly revolved around a single melody, he decided to add verses that would lead up to the central melody which would now be a chorus thus forming two parts (unseen earlier in traditional Sri Lankan music) removing restrictions that had existed earlier. In doing so, Amaradeva created a uniquely Sinhalese music style that stayed true to folk tradition while incorporating outside influences. His work was vital in the creation of the sarala gee genre practised subsequently by artists like Sanath Nandasiri, Victor Ratnayake, T.M. Jayaratne, Sunil Edirisinghe and Gunadasa Kapuge etc.Pandit Amaradeva had been the recipient of numerous awards including the Philippine Ramon Magsaysay Award (2001), Indian Padma Sri Award (2002) and Sri Lankan 'President's Award of Kala Keerthi' (1986) and Deshamanya Award (1998). In 2003 the French government awarded him the prestigious honour; Ordre des Arts et des Lettres. Notably he still remains the most popular artist as confirmed by Nielsen Media Research findings. He has also represented Sri Lanka in many forums including the UNESCO 1967 Manila Symposium. The University of Kelaniya conferred on him the Degree of Doctor of Philosophy (Fine Arts) Honoris Causa in 1991 and the University of Ruhuna and University of Peradeniya conferred on him the Degree of Doctor of Letters, Honoris Causa in 1993 and 1998.In 1972, Pandit Amaradeva composed the music for the Maldivian National Anthem (Gaumii salaam) at the request of Maldivian Government.Amaradeva died at the age of 88 on 3 November 2016 due to a heart failure. A state funeral was held  by the government with a week of national mourning declared."
+    }, 
+    "e4ab752a-d9e5-4b1d-958e-37bafd924203": 
+    {
+        "name": "Latha Walpola", 
+        "genres": [], 
+        "birth": 1934, 
+        "summary": "Deshamanya Matharage Rita Genevieve Fernando, better known by her stage name Latha Walpola, is a prominent Sri Lankan vocal artist. It was as a member of a church choir that Walpola began a career that led to her becoming one of Sri Lanka's premier singers of her day. Today her fans often refer to her as 'The Nightingale of Sri Lanka'"
+    }, 
+    "6fa2b722-3b33-47cb-b902-05d0c52e4a62": 
+    {
+        "name": "The Moonstones", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "The Moonstones was an influential Sri Lankan band, led by Clarence Wijewardene and Annesley Malewana. It also included Mangala Rodrigo on lead guitar and Sunil Malawana on bass guitar. Originating in Ratnapura, the group was one of the most popular Sri Lankan bands during the 1960s."
+    }, 
+    "0b432b1e-ca57-4936-a27f-0cba20d807ce": 
+    {
+        "name": "Nanda Malini", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1943, 
+        "summary": "Mirihana Arachchige Nanda Malini Perera (born 23 August 1943), popularly as Nanda Malini, is a Sri Lankan songstress and playback singer. One of the best known and most honored singers of Sri Lanka, Malini's choice of singing themes are based on real life and social-cultural situations. Her songs intricate notional ideas of relationships, life-circumstances, and emotions that stem out of human realities."
+    }, 
+    "88022344-8f1e-4566-b995-1d57092856c5": 
+    {
+        "name": "Narada Disasekara", 
+        "genres": [], 
+        "birth": 1933, 
+        "summary": "Narada Disasekara (7 June 1933  19 May 2010) was a Sri Lankan classical singer. He was the first singer to win the Sarasaviya Award when he was awarded for Best Male Playback Singing in 1964 for his duet Galana Gangaki Jeevithe with a young Nanda Malini for Ranmuthu Duwa."
+    }, 
+    "522013d6-9abf-4afa-bb79-4fc867c023ea": 
+    {
+        "name": "Chandralekha Perera", 
+        "genres": [], 
+        "birth": 1961, 
+        "summary": "Chandralekha Perera (born 1 December 1961), is a popular Sri Lankan pop singer."
+    }, 
+    "ad9d9f04-41b4-44f1-ae8f-bd7e9f41e689": 
+    {
+        "name": "Keerthi Pasquel", 
+        "genres": [], 
+        "birth": 1956, 
+        "summary": "Pasquel Wasam Ananda Keerthirathna (born on January 29, 1956), known professionally as Keerthi Pasquel is a veteran pop musician and composer from Kandy, Sri Lanka. He has been performing for more than three decades and has won a number of awards. Keerthi is a judge on the National reality show Derana Dream Star and sets the record as the only judge in Sri Lanka to sit for 10 consecutive seasons in a reality show beginning from 2008 until today. He has been active in music education and in social welfare.  "
+    }, 
+    "be0bdd2d-afa6-45a7-b584-a48841e17687": 
+    {
+        "name": "Chitral Somapala", 
+        "genres": ["hard rock", "rhythm and blues", "heavy metal", "power metal"], 
+        "birth": 1966, 
+        "summary": "Peragaswatte Chandana Chitral Somapala (born 4 November 1966 ), aka Chity Somapala, is a Sri Lankan hard rock and heavy metal vocalist and a music director. He is known for his work with European power metal bands Firewind, Power Quest, Avalon, Faro, Red Circuit, and Civilization One. Somapala gained popularity in his home country due to his Sinhala track 'Nadee Ganga' which was released in 1998."
+    }, 
+    "87be6e04-3deb-4917-aeb6-d67944625441": 
+    {
+        "name": "Ranidu Lankage", 
+        "genres": [], 
+        "birth": 1982, 
+        "summary": "Ranidu Lankage is a Sinhalese R&B and hip hop artist who raised the international profile of Sinhalese RnB/pop. Lankage is the first Sinhalese artist to be played on BBC Radio 1 and the creator of the first Sinhalese single to be played on MTV and channel V and Z music India. He is a graduate in Economics from Yale University."
+    }, 
+    "7b7d39b9-44a9-495b-b0e4-f9d00fb6c723": 
+    {
+        "name": "Nalin Jayawardena", 
+        "genres": [], 
+        "birth": 1957, 
+        "summary": "Nalin Jayawardena (Sinhala :  ) (born 18 April 1957) is a popular Sri Lankan singer and vocalist. He was the first Sri Lankan singer to release an internet based audio album in Sinhala allowing his fans from around the world to download the album free of charge. This album titled Kanda Paamule was released in 2004. Nalin Jayawardena lives in Perth, Australia.He has released more than 21 CDs including several tribute CDs for the legendary singer HR Jothipala . Nalin Jayawardena has sung over 350 original songs and over 20 videos of his songs are available online. These songs were composed in collaboration with talented sinhala lyric writers such as Dr Vicumpriya Perera who wrote most of Nalin's songs, Sunil Govinnage, Sriya Kumarasingha and Chrishanthi de fonseka . Musical composition for Nalin's songs were done by popular Sri Lankan musicians including Nimal Mendis ,  Jayanga Dedigama, Dhammika Edusooriya, Multi award winner Visharada Dharashana Wickramathunga, Visharada Sarath Ovitigala, Rohan Jayawardena, Sangeeth Wickramasingha, Ananda Widyasekara and Rukshan Karunanayaka . Nalin is one of the early Sri Lankan artists to release his songs in Google Play, iTunes, and Amazon. In 2016, a lyrics book, 'Gee Tharu Mal,' containing over 300 songs sung by Nalin Jayawardena was released. Nalin Jayawardena was the recipient of the Multicultural Deshabhimani Award in 2016 of  Serendib Publications, Australia.He has also collaborated in the making of the first-ever Dhammapada Stanzas CD packs with Ven Beruwela Siri Sobitha and Dr Gill Fronsdal. He also collaborated in making the charity CD/DVD in the aid of the tsunami victims in Sri Lanka. He also collaborated with Vicumpriya Perera and Bhadraji Mahinda Jayatilaka to produce the first-ever sinhala audio fiction book Kulageyin Kulageyata spanning into five compact discs. This audio book is a production of Lanka Heritage and Sarasavi Publishers, Sri Lanka."
+    }, 
+    "45df71db-1eed-4cdb-9a4d-8f6c76d10939": 
+    {
+        "name": "Sashika Nisansala", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1981, 
+        "summary": "Sashika Nisansala Jayasumana (born 28 September 1981), is a Sri Lankan songstress and playback singer. She won the SLIM-Nielsen Peoples Awards for the Most Popular Female Singer for record six consecutive years since 2016."
+    }, 
+    "01b7c5e7-e434-4316-bad6-ada0840d4ee9": 
+    {
+        "name": "Anton Jones", 
+        "genres": ["baila"], 
+        "birth": 1937, 
+        "summary": "Anton Jones (3 June 1937  21 February 2016) was a Sri Lankan singer and songwriter. Considered as a prominent Baila singer in Sri Lanka, Jones had several hits, including Mini Gawuma and Uyala Pihala.[2] His songs are composed about special events that took place in this country, thus becoming the only singer who sang from real events.[3]"
+    }, 
+    "3b7d268c-692d-43de-9f54-4fdd6363aa47": 
+    {
+        "name": "C. T. Fernando", 
+        "genres": ["pop", "soul", "rhythm and blues"], 
+        "birth": 1921, 
+        "summary": "Cyril Tudor Fernando (28 January 1921  17 October 1977  ), popularly known as C.T. Fernando, was a Sri Lankan singer and composer. One of the most popular singers in Sri Lankan music often known as the First Pop singer in Sri Lanka, Fernando was praised by critics for the themes and wording of his songs like 'Vana Bamaru,' 'Bilinda Nelwa Ukule' and 'Rosa Male.' His other popular songs include 'Lo Ada Ninde', 'Gile Male Tarawa' and 'Mariya Mawu Kuse.'"
+    }, 
+    "8c3ba916-c08a-493b-b052-11a493f54904": 
+    {
+        "name": "Prince Udaya Priyantha", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1970, 
+        "summary": "Prince Udaya Priyantha (13 June 1970  8 June 2017) was a Sri Lankan singer, composer and songwriter."
+    }, 
+    "7cc65a6a-712f-4bb0-9e09-7a8587eecb2c": 
+    {
+        "name": "Nirosha Virajini", 
+        "genres": [], 
+        "birth": 1973, 
+        "summary": "Virajini Lalithya de Silva, also known as Nirosha Virajini is a Sri Lankan award-winning singer, musician and music director with a career spanning over 23 years."
+    }, 
+    "895e57b8-3095-462a-bc72-d092df979e0b": 
+    {
+        "name": "Chandralekha Perera", 
+        "genres": [], 
+        "birth": 1961, 
+        "summary": "Chandralekha Perera (born 1 December 1961), is a popular Sri Lankan pop singer."
+    }, 
+    "99b38e84-0da7-4a1b-997f-bf29fcb536c4": 
+    {
+        "name": "Latha Walpola", 
+        "genres": [], 
+        "birth": 1934, 
+        "summary": "Deshamanya Matharage Rita Genevieve Fernando, better known by her stage name Latha Walpola, is a prominent Sri Lankan vocal artist. It was as a member of a church choir that Walpola began a career that led to her becoming one of Sri Lanka's premier singers of her day. Today her fans often refer to her as 'The Nightingale of Sri Lanka'"
+    }, 
+    "98dc24bd-fd06-4da0-bb98-3391cf1cf0ad": 
+    {
+        "name": "Sanath Nandasiri", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1942, 
+        "summary": "Prof. Sangeeth Nipun Herath Mudiyanselage Sanath Nandasiri (born 15 February 1942 ) is a Sri Lankan singer, musician, music director, composer and playback singer. He is the current Chancellor of the University of the Visual and Performing Arts in Sri Lanka. One of the iconic singers in Sri Lankan music, Nandasiri has received several awards for his compositions in a career spanning more than six decades. He also composed the music to Sandamalige Kathawa, the first TV serial on Rupavahini."
+    }, 
+    "1b5ee669-541a-4e6a-bdaf-6610bb40460f": 
+    {
+        "name": "Lionel Ranwala", 
+        "genres": [], 
+        "birth": 1939, 
+        "summary": "Lionel Ranwala, (27 November 1939  13 November 2002) was a musician and a singer in Sri Lanka and a legend in Sri Lankan folk music. His birth city was Kalubowila and he studied in Kalubowila Budhdhagosha College, Kumara College Wellawatta and Lumbini College, Colombo."
+    }, 
+    "cf9bd0f9-670d-44e4-8c20-c8d8333763ac": 
+    {
+        "name": "M.I.A. (rapper)", 
+        "genres": ["dance", "world", "hip hop", "electronic", "progressive rap[2]"], 
+        "birth": 1975, 
+        "summary": "Mathangi 'Maya' Arulpragasam  (born 18 July 1975), known by her stage name M.I.A. (an acronym of 'missing in action), is an English rapper, singer, record producer and activist. M.I.A.'s songs contain evocative political and social commentary regarding immigration, warfare and identity in a globalised world. Her music combines elements of alternative, dance, electronic, hip hop and world music with eclectic instruments and samples.Born in London to Sri Lankan Tamil parents, M.I.A. and her family moved to Jaffna in northern Sri Lanka when she was six months old. As a child, she experienced displacement caused by the Sri Lankan Civil War, which made the family return to London as refugees when M.I.A. was 11 years old; the war had a defining influence on M.I.A.'s artistry. She started out as a visual artist, filmmaker and designer in 2000, and began her recording career in 2002. One of the first acts to come to public attention through the Internet, she saw early fame as an underground artist in early 2004 with her singles 'Sunshowers' and 'Galang'.M.I.A.'s first two albums, Arular (2005) and Kala (2007), received widespread critical acclaim for their experimentation with hip hop and electronic fusion. The single 'Paper Planes' from Kala reached number four on the US Billboard Hot 100 and sold over four million copies. Her third album Maya (2010) was preceded by the controversial single-short film 'Born Free'. Maya was her best-charting effort, reaching the top 10 on several charts. Her fourth studio album, Matangi (2013), included the single 'Bad Girls', which won accolades at the MTV Video Music Awards. M.I.A. released her fifth studio album, AIM, in 2016. She scored her first Billboard Hot 100 number-one single as a featured artist on Travis Scott's 'Franchise' (2020).M.I.A.'s accolades include two American Society of Composers, Authors and Publishers (ASCAP) awards and two MTV Video Music Awards. She is the first person of South Asian descent to be nominated for an Academy Award and Grammy Award in the same year. She was named one of the defining artists of the 2000s decade by Rolling Stone, and one of the 100 most influential people of 2009 by Time. Esquire ranked M.I.A. on its list of the 75 most influential people of the 21st century. According to Billboard, she was one of the 'Top 50 Dance/Electronic Artists of the 2010s'. M.I.A. was appointed Member of the Order of the British Empire (MBE) in the 2019 Birthday Honours for her services to music."
+    }, 
+    "6f7ea602-e11b-42fc-a99b-3725bf331ebe": 
+    {
+        "name": "Dayan Witharana", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1962, 
+        "summary": "Dayan Witharana, (born 18 April 1962 as  \u00ad [Sinhala]), is a Sri Lankan singer and a photographer. He has sung more than 330 songs across many genre."
+    }, 
+    "bccb7ee3-7242-452d-abf7-bb6fe36fb5e3": 
+    {
+        "name": "Athma Liyanage", 
+        "genres": [], 
+        "birth": null, 
+        "summary": "Athma Liyanage is a Sri Lankan singer and songwriter. He became popular in the early 90s with the song 'Liyathambara'. He gained popularity with the Millennial generation with his new songs 'Ayemath adaren' and 'Sitha dura handa'."
+    }, 
+    "15b8afae-9462-4080-8be1-aa94a5bb7b85": 
+    {
+        "name": "Allen Ratnayake", 
+        "genres": [], 
+        "birth": null, 
+        "summary": "Allen Ratnayake was an early Sri Lankan singer and musician. Ratnayake sang for various Record labels like HMV and Columbia and scholars and  musicians like Gunapala Perera used to mention his name among the other famous artists in the gramophone era of Ceylon. Ratnayake had given his voice for many Sinhala gramophone records. 'Jethawanarame Athi Ramani' is one of his musical albums which consisted of Nine soundtracks. 'Anoma Gan Theere', 'Jethawanarame athi Ramani' are two famous songs of Allen ratnayake."
+    }, 
+    "3a9e0e6a-1b10-485c-b709-4ef521868f2d": 
+    {
+        "name": "Pradeep Rangana", 
+        "genres": [], 
+        "birth": 1983, 
+        "summary": "Pradeep Rangana -   (born 12 November 1983), is a Sri Lankan medical doctor, singer and songwriter. He was the winner in the second season of Sirasa Superstar, an idol program in Sri Lanka similar to American Idol. He currently works as a doctor in Marathenna Regional Hospital, Balangoda."
+    }, 
+    "b58f61b5-8136-4987-a762-2bf9ef7479e2": 
+    {
+        "name": "Dasun Madushan", 
+        "genres": [], 
+        "birth": 1996, 
+        "summary": "Dasun Madushan (born 2 February 1996) is a Sri Lankan singer. He is the winner of the fifth season of Sirasa Superstar."
+    }, 
+    "6b2c8af3-9e2e-4c73-b4bb-29fd4fd048bd": 
+    {
+        "name": "Milton Mallawarachchi", 
+        "genres": ["pop", "soul", "rhythm and blues", "country music"], 
+        "birth": 1944, 
+        "summary": "Sumanasiri Mallawarachchi Don (7 April 194410 March 1998 ), popularly known as Milton Mallawarachchi, was a Sri Lankan singer and musician. One of the most respected singers in Sri Lankan music history, Mallawarachchi was a trending act in Sri Lanka for more than a decade, performing nearly a total of 850 songs with over 35 albums. He is also known to be a music composer for most of his songs, a film play-back singer for the silver screen, a talent tabla and sitar player."
+    }, 
+    "0ccb751b-88d9-44c8-b252-a80832f200bc": 
+    {
+        "name": "Mariazelle Goonetilleke", 
+        "genres": [], 
+        "birth": 11, 
+        "summary": "Mariazelle Goonetilleke is a Sri Lankan singer and musician. She has performed not only in Sri Lanka but also as far as the United Kingdom, the United States, the United Arab Emirates, Singapore and Australia."
+    }, 
+    "fcadccbc-17e3-44b6-b2fb-c45e5b56c20b": 
+    {
+        "name": "Rodney Warnakula", 
+        "genres": [], 
+        "birth": 1961, 
+        "summary": "Warnakula Patabandige Rodney Priyantha Perera, (born April 24, 1961 as  ) [Sinhala]), popularly known as Rodney Warnakula, is a Sri Lankan actor, comedian, singer, and dubbing artist."
+    }, 
+    "99abd555-018f-4bd3-bbf6-74a8750f1e11": 
+    {
+        "name": "Sunil Edirisinghe", 
+        "genres": [], 
+        "birth": 1949, 
+        "summary": "Patikirige Sunil Jayapreethi Edirisinghe (born 19 December 1949) is a Sri Lankan classical musician. Edirisinghe won the presidential award for playback singing in 1983 for 'Maya Miringuva Pirunu Lo Thale' from Adhishtanaya. He was awarded the Swarna Sankha Award for playback singing in 1988 for 'Thurulaka Hurathal' from Mangala Thagga and in 1990 for 'Walakulak Gena Muwa Karamu' from Saharave Sihinaya. He has also won the Sarasaviya Award for playback singing in 1988 for 'Thidasa Pure' from Sandakada Pahana and in 2002 for 'Poronduwa' from Poronduwa."
+    }, 
+    "57f3ad49-3092-44a9-b521-c5330000f3f6": 
+    {
+        "name": "Dinesh Subasinghe", 
+        "genres": [], 
+        "birth": 1979, 
+        "summary": "Dinesh Subasinghe (born 10 July 1979, Colombo) is a Sri Lankan composer, violinist, and music producer. He composed Karuna Nadee, a Buddhist oratorio, and re-introduced a lost, ancient musical instrument known as the ravanahatha to Sri Lanka. He is also a film and television composer whose works integrate western and eastern classical music with electronic music, Buddhist music, folk music, traditional orchestral arrangements, and world music genres. From 2002 to 2009 he led the pop classical band, Dee R Cee Members.In 2015-2016 Dinesh received Sri Lankan attention for the film score of Ho Gaana Pokuna children movie. He has nominated for 10 film awards & won six awards out of that including Derana Film Awards, Presidential Film Awards, Hiru Golden Film Award & Signis Awards, in 2016-2017 . he became the most youngest composer to score music for 90 Tele-dramas for Sri Lankan TV.Dinesh received the Toyp Award Ten Outstanding Young Persons of the World (TOYP) in 2016 for his contribution to Sri Lankan arts. In 2018 he received the 'Asia Inspiration Award' at the 2nd south Asian youth summit. In 2019 he received the 'India Peace Prize' at the 3rd south Asian Youth summit in New Delhi India.His music score for Sudu Andagena Kalu Awidin teledrama & music direction of 'Tone Poem' musical series became very popular in Sri Lanka."
+    }, 
+    "21750833-2ada-4010-af69-5b8fa254afcd": 
+    {
+        "name": "Chitral Somapala", 
+        "genres": ["hard rock", "rhythm and blues", "heavy metal", "power metal"], 
+        "birth": 1966, 
+        "summary": "Peragaswatte Chandana Chitral Somapala (born 4 November 1966 ), aka Chity Somapala, is a Sri Lankan hard rock and heavy metal vocalist and a music director. He is known for his work with European power metal bands Firewind, Power Quest, Avalon, Faro, Red Circuit, and Civilization One. Somapala gained popularity in his home country due to his Sinhala track 'Nadee Ganga' which was released in 1998."
+    }, 
+    "e9ed9f06-1126-42b0-a61f-e29a54fef129": 
+    {
+        "name": "Paranoid Earthling", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Paranoid Earthling is a Sri Lankan rock band from Kandy. Its music can be described as a blend of experimental rock, grunge, psychedelic and stoner rock. It was founded in 2001 by Mirshad Buckman (lyricist, vocalist and guitarist), Shanka Samarasinghe (drummer), Asela Bandara (bass guitarist) and Dhanushka Samarasinghe (guitarist). The band's EP Rock 'N Roll is My Anarchy was released in 2005. In 2014, the band underwent a line-up change when Harshan Gallage joined as the drummer."
+    }, 
+    "3754589a-3e5d-4e38-ac14-c38878e952e4": 
+    {
+        "name": "H. R. Jothipala", 
+        "genres": [], 
+        "birth": 1936, 
+        "summary": "Hettiarachchige Reginald Jothipala (12 February 1936 - 7 July 1987), popularly as H. R. Jothipala, was a Sri Lankan playback singer in the Sinhala cinema as well as a film actor. Considered as the best playback singer in Sri Lankan film history, Jothipala lent his voice to all classes of actors ranging from Eddie Jayamanne to Ranjan Ramanayake. He also worked as an opera singer. He died in July 1987 at the age of 51 year from cardiac arrest."
+    }, 
+    "68ae9a0f-0708-4135-8d49-dd54f502ce07": 
+    {
+        "name": "Bathiya and Santhush", 
+        "genres": [], 
+        "birth": "None", 
+        "summary": "Bathiya & Santhush, also known as BNS, are a Sri Lankan pop duo consisting of Bathiya Jayakody (born on December 22, 1976)  and Santhush Weeraman (born on September 5, 1977), who met while at the 'Mary Anne David School of Vocal Music' in Colombo (training mainly under the categories of classical and show tunes). They both were born in Colombo, Sri Lanka. They have been one of the most commercially successful music acts in Sri Lanka in the last two decades.Bathiya Jayakody was educated at Ananda College, Colombo while Santhush Weeraman was educated at Royal College, Colombo. Santhush comes from a musical family, his brother Dushyanth Weeraman is also a popular singer in Sri Lanka.Since the inception of their act in 1998, they have over 50 number-one hit singles, six platinum selling mainstream albums, four commercially successful EPs and countless movie soundtracks. BNS are one of the biggest musical acts to hit the Sri Lankan musical scene since the 1990s, mixing Sinhala, Tamil, and English rap verses in their originals, while they have also mixed Hindi rap verses in their folkhop remixes bringing out their contemporary style and the music industry in Sri Lanka. BNS became the only Sri Lankan hip hop act to feature Indian singers, namely Hariharan (in the song Yaalpanamen), Asha Bhosle (Dedunna Sedi) and Sonu Nigam (in the song Aachale). BNS is also the only Sri Lankan artistes to have albums under both Sony BMG & Universal Music India.Having performed in over 2000 concerts in Sri Lanka and abroad, BnS marked significant success with their own concert tour series 'Neththara Live' with 120 concerts (2005-2008), 'Shaheena Live' 40 concerts (2009-2011), 'Sarasihina Live' 150 concerts (2011-2014), 'BNS Up Close & Personal' 50 Concerts (2015-2018) and their latest concert series 'Oba Nisa - Celebrating 20 Years of Music' which was launched in 2019.Starting from a musical duo from their home during their early days, BnS Currently are the primary share holders of the BNS Production Group which houses some of the most successful companies in the Sri Lankan entertainment industry companies  Showtown Entertainment event management & production, Saregama Music Digital Audio Production, Saregama Films, Saregama Digital Content Acquisition & Management and Leap Strategic Concepts."
+    }, 
+    "379db4f5-41a6-434e-83ea-c9c618fc54a9": 
+    {
+        "name": "Nimal Mendis", 
+        "genres": [], 
+        "birth": 1934, 
+        "summary": "Nimal Mendis (19342015) was a Sri Lankan singer and songwriter, and was one of a handful of Sri Lankan musicians to appear on the BBC television programme Top of the Pops (1968). Mendis was a longstanding member of the Performing Rights Society and the Mechanical Copyright Protection Society of Great Britain.Mendis was discovered in the late 1950s by Radio Ceylon, which dominated the airwaves in South Asia in the era. The station backed Mendis' songs from the outset, including 'Kandyan Express', turning them into hits in South Asia: so much so that listeners from all over the Indian sub-continent wrote in to Radio Ceylon requesting his songs.Mendis had been involved with music from his early childhood, and has lived for many years in London travelling often to Sri Lanka. He has also lived at Le Paradis in the Charente, the South West of France, for five years with his wife Ranjani. Mendis was married to Ranjani for 33 years until her death in 2010, and has one son, Paulmarie, with whom Mendis ran Mediaeye Productions.The devastation of the 2004 tsunami moved Mendis, leading him to compose a song to aid the victims. This was recorded in Australia, Sri Lanka and the United Kingdom, and was commended by the British Parliament in early day motion 638, sponsored by MP Linda Perham."
+    }, 
+    "d37d86ce-de6f-453a-8d65-fea35c6b13f8": 
+    {
+        "name": "Tariq Hisny", 
+        "genres": ["film score", "soundtrack", "classical", "electronic"], 
+        "birth": 1990, 
+        "summary": "Tariq Hisny, simply known and credited as Tariq, is a Sri Lankan composer and singer, working mainly for the Indian music industry."
+    }, 
+    "0b4ab3f9-6cfd-490d-9621-5fa96a3abe74": 
+    {
+        "name": "Indrachapa Liyanage", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Indrachapa Liyanage (born January 13, 1982) is a Sri Lankan singer. He has completed his debut album Abinishkramanaya (renunciation), but it has not been officially released yet."
+    }, 
+    "3eb6b934-6f0b-47d2-a1d1-6580a4155e07": 
+    {
+        "name": "Paul Fernando", 
+        "genres": ["pop", "calypso", "r&b", "baila"], 
+        "birth": 1951, 
+        "summary": "Madawela Hewage Paul Fernando (24 November 1951  16 November 2020 Sinhala:  ), popularly as Paul Fernando, was a Sri Lankan musician and a Baila singer. Often referred to as the 'Prince of Baila', Fernando became one of the most popular singers in Sri Lankan western music industry. Also, he is one of the leading artists dedicated to popularizing the art of Baila in Sri Lanka."
+    }, 
+    "86275646-1856-4ebe-a970-93e56bb41044": 
+    {
+        "name": "Nanda Malini", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1943, 
+        "summary": "Mirihana Arachchige Nanda Malini Perera (born 23 August 1943), popularly as Nanda Malini, is a Sri Lankan songstress and playback singer. One of the best known and most honored singers of Sri Lanka, Malini's choice of singing themes are based on real life and social-cultural situations. Her songs intricate notional ideas of relationships, life-circumstances, and emotions that stem out of human realities."
+    }, 
+    "d0e9f26f-27cd-4faa-82e0-d68ef894d11c": 
+    {
+        "name": "Edward Jayakody", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1952, 
+        "summary": "Jayakody Arachchige Don Edward Timothy Jayakody (born 6 April 1952), popularly as Edward Jayakody, is a Sri Lankan musician, singer and composer. Jayakody has directed the music for hundreds of Sinhala films and television serials and has also composed many songs for children's programming ('Koppara Koppara').Jayakody won the Swarna Sanka Award in 1987 for Best Male Singer for the film Gedara Budun Amma. He won Best Music Director in 1979 and 1980 for the plays Nidane and Aparadaya Saha Danduwama."
+    }, 
+    "a66da086-300b-4f4b-8a7d-075d6fa43063": 
+    {
+        "name": "Eddie Jayamanne", 
+        "genres": [], 
+        "birth": 1915, 
+        "summary": "Wanniaarachchige Don David Victor Jayamanne KBE (15 February 1915  25 July 1981), popularly known as Eddie Jayamanne was a popular Sri Lankan comedian and actor of early Sri Lankan cinema."
+    }, 
+    "b0182184-cb60-4b1e-b3d4-4dae7a266b9f": 
+    {
+        "name": "Rukmani Devi", 
+        "genres": [], 
+        "birth": 1923, 
+        "summary": "Daisy Rasammah Daniels, known popularly as Rukmani Devi  (15 January 1923  28 October 1978 ) was a Sri Lankan film actress and singer, who was often acclaimed as 'The Nightingale of Sri Lanka'. She made it to the silver screen via the stage and had acted in close to 100 films, at the time of her death. Having an equal passion for singing as well as a melodious voice, she was Sri Lanka's foremost female singer in the gramophone era. After her death, she was awarded the Sarasaviya 'Rana Thisara'- Life Time Achievement Award at the 1979 Sarasaviya Awards Festival."
+    }, 
+    "5ab4ee2b-6dfb-4e6f-8757-fda3852887ae": 
+    {
+        "name": "Kamal Addararachchi", 
+        "genres": [], 
+        "birth": 1962, 
+        "summary": "Kamal Addararachchi    (born Addararachchige Gunendra Kamal on 5 February 1962) is a Sri Lankan film and teledrama actor, singer and presenter. He made his debut as an actor in Gamini Fonseka's 1981 film Sagarayak Meda, whilst he was a still a student at school. Since the late 1970s, he has appeared in a variety of roles in many films and teledramas. Addararachchi, has acted in over 40 films, 20 teledramas and 6 stage plays, and won the Sarasaviya Best Actor Award for his role of Sobana in Agnidahaya in 2002.He also made a mark as a singer in 1993 with 'Unmadawoo,' a duet with Damayanthi Jayasooriya, which featured in the film Saptha Kanya. He was also the host of the first three seasons of Sirasa Superstar, a reality show, and first season of Hiru Mega Stars. He also had a great fall at the BMICH while singing Mal Pibidena Eka Wasantha Samayaka by H. R Jothipala."
+    }, 
+    "dbe5f375-2887-4c3f-912d-bb8d2cab9301": 
+    {
+        "name": "Kasun Kalhara", 
+        "genres": [], 
+        "birth": 1981, 
+        "summary": "Kasun Kalhara Jayawardhana (born 3 November 1981), known professionally as Kasun Kalhara, is a Sri Lankan singer, musician, vocal coach and record producer. During his musical career, Kasun has released three albums, Haritha Nimnaye, Radical Premaya and Romantic Opera. He is one of the biggest and best-selling music artists in Sri Lanka."
+    }, 
+    "7c6fc0e7-b08b-47d8-9e62-d52d9056b51f": 
+    {
+        "name": "Mignonne Fernando", 
+        "genres": [], 
+        "birth": 1943, 
+        "summary": "Mignonne Fernando is a Sri Lankan singer, part of the popular group 'The Jetliners'."
+    }, 
+    "c84fa056-0126-416b-a58e-8096225b7606": 
+    {
+        "name": "Rukshan Perera", 
+        "genres": [], 
+        "birth": 1956, 
+        "summary": "Rukshan Perera, is a Sri Lankan-born singer-songwriter, record producer, international recording, television star, and a multi-instrumentalist."
+    }, 
+    "cb4c4897-a9aa-4846-a52f-07dc0a0440ae": 
+    {
+        "name": "Sahan Ranwala", 
+        "genres": [], 
+        "birth": 1978, 
+        "summary": "Sahan Ranwala (born July 3, 1978 as   [Sinhala]), is an actor in Sri Lankan cinema, stage drama and television. He is also works as a musician, composer and a presenter. He is the managing director of Lionel Ranwala Folk Art Foundation."
+    }, 
+    "2a908705-41df-4aeb-b106-111df7dcd9a6": 
+    {
+        "name": "Yohani", 
+        "genres": [], 
+        "birth": 1993, 
+        "summary": "Yohani Diloka de Silva (born 30 July 1993), popularly known as Yohani, is a Sri Lankan singer, songwriter, rapper, music producer, YouTuber.[2][3] She is also famous on TikTok and a businesswoman of musical instruments imports and exports.[4][5][6]"
+    }, 
+    "ddc08e84-2133-469b-ba0c-dc19e6faee13": 
+    {
+        "name": "Victor Rathnayake", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1942, 
+        "summary": "Rathnayake Arachchilage Victor (born 18 February 1942), popularly known as Victor Rathnayake, is a Sri Lankan singer, composer, lyricist and a renowned musician. He was the first Sri Lankan artist to hold a solo concert; His concert known as 'SA' was first performed in 1973, and was an instant success. Rathnayake credits his success to his 'fitting blend of Western music with Ragadari classical music.' His songs deal with diverse themes that vary from love, to patriotism and Buddhism.Matara Achchi is the first film he composed music for and its Sandakada Pahana song sung by Sunil Edirisinghe is still very popular among Sinhala music fans. Rathnayake also has composed music for films like Siribo Aiya, Podi Malli, Sarungale, Hulavali and Athuru Mithuru."
+    }, 
+    "64559c42-8e1c-4b5b-a39d-fd9578fdcee1": 
+    {
+        "name": "Sunil Perera", 
+        "genres": ["pop", "soul", "rhythm and blues", "baila", "western cha-cha", "rock", "hip hop", "reggae"], 
+        "birth": 1952, 
+        "summary": "Uswatta Liyanage Ivor Sylvester Sunil Perera (14 September 1952  6 September 2021), popularly as Sunil Perera, was a Sri Lankan vocalist, guitarist, songwriter and composer. Described as one of the most famous singers in the country, Perera was the leader and the lead vocalist of The Gypsies. He was associated with Sri Lanka's baila genre, and gained the nickname 'Baila Chakravarthy'."
+    }, 
+    "436e79fd-e26c-46f6-b636-d02910b89c5f": 
+    {
+        "name": "My Vitriol", 
+        "genres": ["alternative rock", "nu gaze"], 
+        "birth": "None", 
+        "summary": "My Vitriol are a British alternative rock band, formed in 1999 in London. The band currently comprises singer and guitarist Som Wardner, drummer Ravi Kesavaram, guitarist Seth Taylor and bassist Tatia Starkey. The band had success with their debut album Finelines in 2001 which spawned three Top 40 hit singles in the UK Singles Chart, before announcing a hiatus in 2002. The band were credited as spearheading a new shoegazing movement, dubbed nu gaze. They released new material in 2007, and released limited fanbase album 'The Secret Sessions' in October 2016. The band name is taken from the Graham Greene novel Brighton Rock."
+    }, 
+    "91ac3450-c8ad-44be-8b61-7d12784b8e43": 
+    {
+        "name": "Umaria Sinhawansa", 
+        "genres": ["pop", "r&b", "jazz"], 
+        "birth": 1991, 
+        "summary": "Umaria Binthy Ayesha Sinhawansa (born 5 January 1991), popularly as Umaria Sinhawansa, is a Sri Lankan pop, R&B and jazz singer. She is the youngest musician to be ever awarded A-Grade by Sri Lanka Broadcasting Corporation. Born in Colombo, Sri Lanka, Umaria began her music career at age 11 in the 2005, performing with her sister at various stages. She made her debut as a playback singer in the film Asai Man Piyabanna. And also she has won silver awards at Pan Asia Music International Music Competition and the Crimea Music Fest international competition.In 2020, her single 'Manda Pama' was a super hit in Sri Lanka and reached 10 million views in a very short time. She was listed among the most viewed female artists on YouTube with 22 million views. And she is the most followed Sri Lanka singer on Instagram. She was received the honorary title Kala Keerthi Abhimani by the All Ceylon Cultural Environment Protection Organization. Meanwhile, she received 'Aya Pranama Award' for her contribution to the music and was awarded the 2021 SLIM-Nielsen Peoples Awards for the song of the year 2021."
+    }, 
+    "cf9f686f-2779-4496-a2d1-95ddef3380da": 
+    {
+        "name": "Indrani Perera", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 15, 
+        "summary": "Indrani Perera (born 15 February), is a Sri Lankan singer and playback singer. Indrani along with Clarence Wijewardena and Annesley Malewana are known as 'The Original Sinhala Pop Trio'."
+    }, 
+    "2e087ab4-fa16-4acf-983b-81508e482d8a": 
+    {
+        "name": "Rookantha Gunathilake", 
+        "genres": [], 
+        "birth": 1959, 
+        "summary": "Mario Glory Rookantha Goonatillake (born 5 September 1959 ), is a Sri Lankan singer, musician and songwriter. One of the most influential musical artists in Sri Lanka, Rookantha started his career as a solo singer in late 1980s after few stints as a keyboard player. He frequently performs duets with his wife, Chandralekha Perera. His daughters Raini Charuka and Windy are both singers.Rookantha is one of the most successful musicians in Sri Lankan pop and sentimental industry. He is known as the King of Pop amongst Sri Lankans. His albums have sold around 15,000 copies in Sri Lanka. He is known as the person who changed the Sri Lankan music industry in the 1980s with his songs."
+    }, 
+    "1374f213-3438-4eae-8214-0a4084fa2217": 
+    {
+        "name": "Tanya Ekanayaka", 
+        "genres": ["classical", "world", "contemporary"], 
+        "birth": "None", 
+        "summary": "Tanya Ekanayaka (born 6 May 1977)  is a Sri Lankan-British concert composer-pianist, classically trained and with a background in Asian and popular music as well as a linguist and musicologist."
+    }, 
+    "aaa81bae-39fd-4339-91b4-5fa69c8522b0": 
+    {
+        "name": "Umaria Sinhawansa", 
+        "genres": ["pop", "r&b", "jazz"], 
+        "birth": 1991, 
+        "summary": "Umaria Binthy Ayesha Sinhawansa (born 5 January 1991), popularly as Umaria Sinhawansa, is a Sri Lankan pop, R&B and jazz singer. She is the youngest musician to be ever awarded A-Grade by Sri Lanka Broadcasting Corporation. Born in Colombo, Sri Lanka, Umaria began her music career at age 11 in the 2005, performing with her sister at various stages. She made her debut as a playback singer in the film Asai Man Piyabanna. And also she has won silver awards at Pan Asia Music International Music Competition and the Crimea Music Fest international competition.In 2020, her single 'Manda Pama' was a super hit in Sri Lanka and reached 10 million views in a very short time. She was listed among the most viewed female artists on YouTube with 22 million views. And she is the most followed Sri Lanka singer on Instagram. She was received the honorary title Kala Keerthi Abhimani by the All Ceylon Cultural Environment Protection Organization. Meanwhile, she received 'Aya Pranama Award' for her contribution to the music and was awarded the 2021 SLIM-Nielsen Peoples Awards for the song of the year 2021."
+    }, 
+    "462c1fe2-77b1-4df4-aa91-a7a754ea8045": 
+    {
+        "name": "Ranidu Lankage", 
+        "genres": [], 
+        "birth": 1982, 
+        "summary": "Ranidu Lankage is a Sinhalese R&B and hip hop artist who raised the international profile of Sinhalese RnB/pop. Lankage is the first Sinhalese artist to be played on BBC Radio 1 and the creator of the first Sinhalese single to be played on MTV and channel V and Z music India. He is a graduate in Economics from Yale University."
+    }, 
+    "e5948712-e8a3-469d-b477-ad11120a645b": 
+    {
+        "name": "Mariazelle Goonetilleke", 
+        "genres": [], 
+        "birth": 11, 
+        "summary": "Mariazelle Goonetilleke is a Sri Lankan singer and musician. She has performed not only in Sri Lanka but also as far as the United Kingdom, the United States, the United Arab Emirates, Singapore and Australia."
+    }, 
+    "50b30e87-1a33-4496-812d-ba5cda11e98f": 
+    {
+        "name": "Ajith Bandara", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": null, 
+        "summary": "Ajith Bandara is a Sri Lankan singer. He is popular in the country for winning the first season of the singing reality contest Sirasa Superstar in 2006."
+    }, 
+    "a250bc0b-67ac-42b6-b620-8973fd6b6c20": 
+    {
+        "name": "Jagath Wickramasinghe", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1966, 
+        "summary": "Jagath Wickramasinghe (born 10 April 1966) is a Sri Lankan musician. He is the current Chairman of Sri Lanka Broadcasting Corporation.Wickramasinghe pursued a career as an engineer, but later decided to become a musician like his parents. His career took off after his songs were played on stations owned by the Sri Lanka Broadcasting Corporation.He is one of the first three judges on Sirasa Superstar for season 1 to 3."
+    }, 
+    "1592e55b-2c26-4157-85d1-932346d24ba8": 
+    {
+        "name": "T. M. Jayaratne", 
+        "genres": [], 
+        "birth": 1944, 
+        "summary": "Tennakoon Mudiyanselage Jayaratne, also known as T.M. Jayaratne (born 13 April 1944) in Dodangoda, Sri Lanka is a popular Sri Lankan vocalist and a violinist.He has received the Presidential Award of Sri Lanka in 1978, 1979, 1980 and 1987. In 2006 Jayaratne was awarded the best male singer award at the Raigam Tele Award Festival."
+    }, 
+    "ac854483-b131-438a-9879-8a1afc7860df": 
+    {
+        "name": "Stanley Peiris", 
+        "genres": [], 
+        "birth": 1941, 
+        "summary": "Stanley Peiris (12 June 1941  13 October 2002) was a Sri Lankan musician and musical composer."
+    }, 
+    "57a4fc2a-1d36-4cf6-9479-f1d09534a5a6": 
+    {
+        "name": "Dushyanth Weeraman", 
+        "genres": [], 
+        "birth": 1980, 
+        "summary": "Dushyanth Weeraman is a Sri Lankan, singer, dancer and actor who gained attention as the winner of the reality talent show 'Sirasa Dancing Stars' in 2008. He is a winner of the 'Ten Outstanding Young Persons of Sri Lanka award in 2013. He is also the younger brother of Santhush Weeraman who is one half of the Sri Lankan pop-duo, Bathiya and Santhush"
+    }, 
+    "5dcef76e-2ea6-4e58-8802-08003cd9c2fc": 
+    {
+        "name": "Mohideen Baig", 
+        "genres": ["soul", "indian classical music"], 
+        "birth": 1919, 
+        "summary": "Kala Suri Alhaj Kareem Mohideen Baig (5 December 1919 - 4 November 1991), popularly as Mohideen Baig, was a Sri Lankan musician. One of the most influential singers in Sinhala music, Baig is known particularly for his Buddhist devotional music. He is a Muslim who moved to Sri Lanka from Salem in Tamil Nadu, but of a Hyderabadi Muslim origin. He was considered a highly influential multicultural figure in the country's arts history. Baig is the first award winning citizen of Sri Lanka."
+    }, 
+    "79b81edf-6e99-4381-966c-1ebdcf4a4848": 
+    {
+        "name": "Jagath Wickramasinghe", 
+        "genres": ["pop", "soul", "rhythm and blues", "indian classical music"], 
+        "birth": 1966, 
+        "summary": "Jagath Wickramasinghe (born 10 April 1966) is a Sri Lankan musician. He is the current Chairman of Sri Lanka Broadcasting Corporation.Wickramasinghe pursued a career as an engineer, but later decided to become a musician like his parents. His career took off after his songs were played on stations owned by the Sri Lanka Broadcasting Corporation.He is one of the first three judges on Sirasa Superstar for season 1 to 3."
+    }
+}
