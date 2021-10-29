@@ -81,7 +81,7 @@ function SearchBar({ value = "", placeholder, onSubmit }) {
           onKeyPress={handleKeyPress}
         />
         <Icon>{input && <MdClear value="" onClick={handleInput} />}</Icon>
-        <Icon title={"search"} onClick={handleKeyPress}>
+        <Icon title={"සොයන්න"} onClick={handleKeyPress}>
           <FaSearch />
         </Icon>
       </SearchInputs>

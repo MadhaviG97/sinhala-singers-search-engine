@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import SearchBar from "./SearchBar";
-import { GoMarkGithub as GithubIcon } from "react-icons/go";
+import { GiMicrophone as Icon } from "react-icons/gi";
 import { useHistory, withRouter } from "react-router-dom";
 import { FaUserSecret } from "react-icons/fa";
 import { DivFlexCenter } from "../globals/styles";
@@ -57,9 +57,9 @@ function Landing() {
     <Container id="Filters">
       <Wrapper>
         <Title>
-          <GithubIcon /> Github Repository Search
+          <Icon /> ශ්‍රී ලාංකික ගායක ගායිකාවන්
         </Title>
-        <SearchBar placeholder="Search..." onSubmit={routeChange} />
+        <SearchBar placeholder="සොයන්න..." onSubmit={routeChange} />
         <SecretLI href={LIurl} target="_blank" rel="noopener noreferrer">
           <FaUserSecret />
         </SecretLI>

@@ -211,7 +211,7 @@ function Search() {
         <IconLink to={`/`}>
           <FaGithub />
         </IconLink>
-        <SearchBar placeholder="Search..." onSubmit={handleSubmit} value={q} />
+        <SearchBar placeholder="සොයන්න..." onSubmit={handleSubmit} value={q} />
       </Header>
       <ResultsWrapper>
         <Filters
