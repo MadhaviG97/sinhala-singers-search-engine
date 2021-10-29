@@ -57,9 +57,9 @@ for letter in derana_wikipedia_list:
 
 singers = set(singers)
 singers = pd.DataFrame(singers)
-singers.to_csv('singers.csv')
+singers.to_csv('data/singers.csv')
 
 links = set(links)
 links = pd.DataFrame(links)
-links.to_csv('links.csv')
+links.to_csv('data/links.csv')
 print(len(singers), len(links))

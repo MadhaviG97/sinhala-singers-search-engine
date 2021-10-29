@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "sinhala_analyzer":{
+          "type": "custom",
+          "tokenizer":"standard",
+          "filter":["stop_filter"]
+        }
+      },
+      "filter":{
+        "stop_filter":{
+          "type":"stop",
+          "stopwords":[]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "name":{
+        "type": "text",
+        "analyzer": "sinhala_analyzer"
+      },
+      "summary":{
+        "type": "text",
+        "analyzer": "sinhala_analyzer"
+      },
+      "birth":{
+        "type": "integer"
+      },
+      "genres":{"type": "text",
+        "analyzer": "sinhala_analyzer" 
+      }
+    }
+  }
+}

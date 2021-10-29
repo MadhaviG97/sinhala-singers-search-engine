@@ -9,7 +9,7 @@ import uuid
 
 es = Elasticsearch()
 
-links = pd.read_csv('links.csv')['0'].values
+links = pd.read_csv('data/links.csv')['0'].values
 
 def remove_sinhala(string):
     i=0
@@ -71,5 +71,5 @@ for link in links[:]:
         document[str(uuid.uuid4())] = details
         print(name)
 
-with open('english.json', 'w') as outfile:
+with open('data/english.json', 'w') as outfile:
     json.dump(document, outfile)
