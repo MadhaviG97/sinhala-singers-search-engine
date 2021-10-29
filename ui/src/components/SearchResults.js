@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { withRouter, Link } from "react-router-dom";
-import { GoStar as StarIcon, GoRepoForked as ForkIcon } from "react-icons/go";
+import { GiCalendarHalfYear as YearIcon } from "react-icons/gi";
+import {BiCategory as CategoryIcon} from "react-icons/bi";
 
 const Results = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const Results = styled.div`
 const List = styled.div``;
 
 const StyledLink = styled(Link)`
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;
   color: #0d4436;
@@ -21,29 +22,29 @@ const StyledLink = styled(Link)`
   }
 `;
 const Repo = styled.div`
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0 .5rem 0;
   border-bottom: 1px solid black;
 `;
 
 const Description = styled.div`
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
 const Stars = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
 `;
 const Forks = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
 `;
 const Language = styled.div``;
 const UpdatedAt = styled.div``;
 const Details = styled.div`
-  font-size: 0.7rem;
+  font-size: 1rem;
   display: flex;
   gap: 1rem;
-  line-height: 1.25rem;
+  line-height: 2.5rem;
 `;
 
 function SearchResults({ filteredResults, data }) {
@@ -75,17 +76,14 @@ function SearchResults({ filteredResults, data }) {
                 {description && <Description>{r.description}</Description>}
                 <Details>
                   <Stars>
-                    <StarIcon />
+                    <YearIcon />
                     {stargazers_count || 0}
                   </Stars>
                   <Forks>
-                    <ForkIcon />
+                    <CategoryIcon />
                     {forks_count || 0}
                   </Forks>
-                  {language && <Language>{language || ""}</Language>}
-                  <UpdatedAt>
-                    {updatedAt ? `Updated ${updatedAt}` : ""}
-                  </UpdatedAt>
+                  
                 </Details>
               </Repo>
             );

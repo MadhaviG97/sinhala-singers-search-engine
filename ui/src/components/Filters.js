@@ -20,13 +20,14 @@ const Container = styled.div`
 const Title = styled.div`
   font-weight: 900;
   margin-bottom: 1rem; ;
+  font-size: 1.2rem;
 `;
 
 const Language = styled.div`
   ${({ theme }) => css`
     margin-left: 1rem;
     padding: 0.25rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
     background-color: ${({ active }) =>
@@ -69,7 +70,7 @@ export default function Filters({ data, handleFilter, setFilterActive }) {
   }
   return (
     <Container id="Filters">
-      <Title>Languages:</Title>
+      <Title>සංගීත ශෛලීය</Title>
       {sortedLangs &&
         (sortedLangs || []).map((item) => {
           return (

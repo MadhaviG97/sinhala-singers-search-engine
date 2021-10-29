@@ -68,6 +68,7 @@ const ResultsWrapper = styled.div`
 const TotalResults = styled.div`
   ${({ theme }) => css`
     font-weight: 700;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -220,7 +221,7 @@ function Search() {
           setFilterActive={setFilterActive}
         />
         <List>
-          <Dropdowns>
+          {/* <Dropdowns>
             <Dropdown
               onChange={handleFilter}
               selected={selectedFilter}
@@ -236,13 +237,14 @@ function Search() {
               options={sortOptions}
               disabled={filterActive}
               label={"Sort"}
-            />
-          </Dropdowns>
+            /> 
+          </Dropdowns> */}
           <TotalResults>
+            ප්‍රතිඵල ගණන - 
             {filteredResults
               ? filteredResults?.totalCount
               : data?.totalCount || 0}{" "}
-            results
+            
           </TotalResults>
           {loading ? (
             <Loading>
@@ -258,11 +260,11 @@ function Search() {
               <Pagination>
                 <Icon onClick={() => handlePagination("prev")}>
                   <LeftIcon />
-                  Prev
+                  පෙර
                 </Icon>
-                Page {page}
+                පිටුව {page}
                 <Icon onClick={() => handlePagination("next")}>
-                  Next
+                පසු
                   <RightIcon />
                 </Icon>
               </Pagination>

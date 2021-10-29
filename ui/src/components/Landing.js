@@ -57,7 +57,7 @@ function Landing() {
     <Container id="Filters">
       <Wrapper>
         <Title>
-          <Icon /> ශ්‍රී ලාංකික ගායක ගායිකාවන්
+          <Icon />ශ්‍රී ලාංකික ගායක ගායිකාවන්
         </Title>
         <SearchBar placeholder="සොයන්න..." onSubmit={routeChange} />
         <SecretLI href={LIurl} target="_blank" rel="noopener noreferrer">
