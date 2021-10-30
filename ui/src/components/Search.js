@@ -5,7 +5,7 @@ import Filters from "./Filters";
 import SearchResults from "./SearchResults";
 import { Spinner } from "react-spinners-css";
 import { withRouter, Link, useParams, Redirect } from "react-router-dom";
-import { FaGithub } from "react-icons/fa";
+import { GiLoveSong } from "react-icons/gi";
 import {
   GoChevronLeft as LeftIcon,
   GoChevronRight as RightIcon,
@@ -174,19 +174,22 @@ function Search() {
 
   const handleFilter = (filter) => {
     //disables sort dropdown when filter is active (sort requires api call and will not align with filtering options)
-    if (filter === "clear" || filter === "Any") {
-      setFilterActive(false);
-      setFilteredResults(data);
-    } else {
-      setFilterActive(true);
-      let filteredResults = data?.items?.filter(
-        (data) => data.language === filter
-      );
-      setFilteredResults({
-        totalCount: filteredResults.length,
-        items: filteredResults,
-      });
-    }
+    setFilterActive(false);
+    setFilteredResults(data);
+    
+    // if (filter === "clear" || filter === "Any") {
+    //   setFilterActive(false);
+    //   setFilteredResults(data);
+    // } else {
+    //   setFilterActive(true);
+    //   let filteredResults = data?.items?.filter(
+    //     (data) => data.language === filter
+    //   );
+    //   setFilteredResults({
+    //     totalCount: filteredResults.length,
+    //     items: filteredResults,
+    //   });
+    // }
   };
 
   const handlePagination = (direction) => {
@@ -210,7 +213,7 @@ function Search() {
     <Container id="Search">
       <Header>
         <IconLink to={`/`}>
-          <FaGithub />
+          <GiLoveSong />
         </IconLink>
         <SearchBar placeholder="සොයන්න..." onSubmit={handleSubmit} value={q} />
       </Header>

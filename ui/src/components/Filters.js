@@ -41,7 +41,7 @@ const Language = styled.div`
   `}
 `;
 
-const LanguageName = styled.div``;
+const GenreItemName = styled.div``;
 const LanguageCount = styled.div``;
 const ClearButton = styled.div`
   ${({ theme }) => css`
@@ -87,7 +87,7 @@ export default function Filters({ data, handleFilter, setFilterActive }) {
               }}
               active={selected === item.label}
             >
-              <LanguageName>{item.label}</LanguageName>
+              <GenreItemName>{item.label}</GenreItemName>
               {selected === item.label ? (
                 <ClearButton>
                   <IoMdClose
