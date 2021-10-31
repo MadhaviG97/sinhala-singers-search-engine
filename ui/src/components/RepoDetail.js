@@ -3,18 +3,17 @@ import styled, { css } from "styled-components";
 import { DivFlexCenter } from "../globals/styles";
 import { BiArrowBack } from "react-icons/bi";
 import {
-  GoStar as StarIcon,
-  GoRepoForked as ForkIcon,
-  GoEye as WatchIcon,
-  GoGist as LanguageIcon,
-  GoPerson as UserIcon,
-  GoIssueOpened as IssuesIcon,
-  GoWatch as UpdatedIcon,
-  GoFile as LicenseIcon,
-  GoLock as VisibilityIcon,
-  // GoRepo as RepoIcon,
-  // GoBook as DescriptionIcon,
+  GoStar as StarIcon
 } from "react-icons/go";
+
+import {
+  FaBirthdayCake as BirthdayIcon
+} from "react-icons/fa";
+
+import {
+  GiMusicSpell as GiMusicSpell,
+} from "react-icons/gi";
+
 import {
   useLocation,
   useHistory,
@@ -55,17 +54,17 @@ const Section = styled.div`
   width: 75%;
 `;
 
-const NameLink = styled.a`
+const NameLink = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
-  color: black;
+  color: #19886B;
 
   &:hover {
-    text-decoration: underline;
+    color: green
   }
 `;
 
@@ -126,65 +125,34 @@ function RepoDetail() {
   const { data, updatedAt } = location.state;
   const {
     name,
-    description,
-    language,
-    stargazers_count,
-    forks_count,
-    watchers_count,
-    open_issues_count,
-    license,
-    owner,
-    visibility,
-    svn_url,
+    genres,
+    birth,
+    summary
   } = data;
   return (
     <Container>
-      <Header> Repository Details:</Header>
+      <Header> Singer Details:</Header>
       <Section>
-        <NameLink href={svn_url} target="_blank" rel="noopener noreferrer">
+        <NameLink>
           Name: {name}
         </NameLink>
-        <DetailMed>About: {description}</DetailMed>
         <Detail>
-          <VisibilityIcon />
-          {visibility}
+          <BirthdayIcon />
+          {birth}
         </Detail>
-        <DetailLink
-          href={owner.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <UserIcon />
-          {owner.login}
-        </DetailLink>
-        <Detail>
-          <LanguageIcon />
-          {language ? language : "n/a"}
-        </Detail>
-        <Detail>
-          <StarIcon />
-          {`${stargazers_count} star${stargazers_count && "s"}`}
-        </Detail>
-        <Detail>
-          <ForkIcon />
-          {`${forks_count} fork${forks_count && "s"}`}
-        </Detail>
-        <Detail>
-          <WatchIcon />
-          {`${watchers_count} follower${watchers_count && "s"}`}
-        </Detail>
-        <Detail>
-          <IssuesIcon />
-          {`${open_issues_count} open issue${open_issues_count > 0 ? "" : "s"}`}
-        </Detail>
-        <Detail>
-          <LicenseIcon />
-          {license ? license.name : "n/a"}
-        </Detail>
-        <Detail>
-          <UpdatedIcon />
-          {updatedAt ? updatedAt : "n/a"}
-        </Detail>
+        <DetailMed>About: {summary}</DetailMed>
+        {
+          genres.map(
+            (k) => (
+                <Detail>
+                  <GiMusicSpell />
+                  {k || "n/a"}
+                </Detail>
+            )
+          )
+        }
+        
+       
       </Section>
       <Buttons>
         <BackButton

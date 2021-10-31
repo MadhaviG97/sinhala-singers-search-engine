@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import { IoMdClose } from "react-icons/io";
-import { sortLanguages } from "../globals/utils";
+import { sortGenres } from "../globals/utils";
 
 const Container = styled.div`
   ${({ theme }) => css`
@@ -42,7 +42,7 @@ const Language = styled.div`
 `;
 
 const GenreItemName = styled.div``;
-const LanguageCount = styled.div``;
+const ItemCount = styled.div``;
 const ClearButton = styled.div`
   ${({ theme }) => css`
     display: flex;
@@ -58,12 +58,11 @@ const ClearButton = styled.div`
 `;
 
 export default function Filters({ data, handleFilter, setFilterActive }) {
-  const [sortedLangs, setSortedLangs] = useState([]);
+  const [sortedGenres, setSortedGenres] = useState([]);
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
-    let sortedLanguages = sortLanguages(data);
-    setSortedLangs(sortedLanguages);
+    setSortedGenres(sortGenres(data));
   }, [data, selected]);
   if (!data) {
     return null;
@@ -71,8 +70,8 @@ export default function Filters({ data, handleFilter, setFilterActive }) {
   return (
     <Container id="Filters">
       <Title>සංගීත ශෛලීය</Title>
-      {sortedLangs &&
-        (sortedLangs || []).map((item) => {
+      {sortedGenres &&
+        (sortedGenres || []).map((item) => {
           return (
             <Language
               key={item.label}
@@ -101,7 +100,7 @@ export default function Filters({ data, handleFilter, setFilterActive }) {
                   />
                 </ClearButton>
               ) : (
-                <LanguageCount>{item.count}</LanguageCount>
+                <ItemCount>{item.count}</ItemCount>
               )}
             </Language>
           );

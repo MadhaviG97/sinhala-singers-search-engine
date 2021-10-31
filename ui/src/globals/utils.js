@@ -1,20 +1,14 @@
-export function sortLanguages(data) {
-  let languages = data?.items?.reduce(
-    (acc, item) => ((acc[item.language] = (acc[item.language] || 0) + 1), acc),
-    {}
-  );
-  let sortedLanguages = [];
-  for (let lang in languages) {
-    if (lang !== "null") {
-      sortedLanguages.push({ label: lang, count: languages[lang] });
-    }
+export function sortGenres(data) {
+  let genres = data?.genres;
+  let sortedGenres = [];
+  for (let item in genres) {
+    sortedGenres.push({ label: genres[item]["key"], count: genres[item]["doc_count"] });
   }
 
-  sortedLanguages
+  sortedGenres
     .sort((a, b) => {
       return a.count - b.count;
     })
     .reverse();
-
-  return sortedLanguages;
+  return sortedGenres;
 }

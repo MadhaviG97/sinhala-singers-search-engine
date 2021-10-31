@@ -1,5 +1,7 @@
 # sinhala-singers-search-engine
 
-. venv/bin/activate
 service elasticsearch start
-export FLASK_APP=app && flask run
+. venv/bin/activate && export FLASK_APP=app && flask run
+
+
+

@@ -32,14 +32,12 @@ const Description = styled.div`
   overflow: hidden;
   text-overflow: ellipsis;
 `;
-const Stars = styled.div`
+const YearComponent = styled.div`
   font-size: 1rem;
 `;
-const Forks = styled.div`
+const GenresComponent = styled.div`
   font-size: 1rem;
 `;
-const Language = styled.div``;
-const UpdatedAt = styled.div``;
 const Details = styled.div`
   font-size: 1rem;
   display: flex;
@@ -54,36 +52,39 @@ function SearchResults({ filteredResults, data }) {
         {(filteredResults ? filteredResults?.items : data?.items || []).map(
           (r) => {
             const {
-              forks_count,
-              stargazers_count,
-              language,
-              updated_at,
-              full_name,
-              id,
-              description,
+              name,
+              genres,
+              birth,
+              summary
             } = r;
-            let updatedAt = new Date(updated_at).toDateString();
+            // let updatedAt = new Date(updated_at).toDateString();
             return (
-              <Repo key={id}>
+              <Repo key={name}>
                 <StyledLink
                   to={{
-                    pathname: `/repository/${id}`,
-                    state: { data: r, updatedAt: updatedAt },
+                    pathname: "/repository/"+name,
+                    state: { data: r },
                   }}
                 >
-                  {full_name}
+                  {name}
                 </StyledLink>
-                {description && <Description>{r.description}</Description>}
+                <Description>{summary || ""}</Description>
                 <Details>
-                  <Stars>
+                  <YearComponent>
                     <YearIcon />
-                    {stargazers_count || 0}
-                  </Stars>
-                  <Forks>
-                    <CategoryIcon />
-                    {forks_count || 0}
-                  </Forks>
-                  
+                    {birth || 0}
+                  </YearComponent>
+                  {
+                    
+                    genres.map(
+                      (k) => (
+                          <GenresComponent key={k}>
+                            <CategoryIcon />
+                            {k || 0}
+                          </GenresComponent>
+                      )
+                    )
+                  }
                 </Details>
               </Repo>
             );
