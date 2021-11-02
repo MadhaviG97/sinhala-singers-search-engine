@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import styled, { css } from "styled-components";
 import SearchBar from "./SearchBar";
-import Filters from "./Filters";
 import SearchResults from "./SearchResults";
 import { Spinner } from "react-spinners-css";
-import { withRouter, Link, useParams, Redirect } from "react-router-dom";
+import { withRouter, Link, useParams, Redirect , useHistory, useLocation} from "react-router-dom";
 import { GiLoveSong } from "react-icons/gi";
 import {
   GoChevronLeft as LeftIcon,
@@ -13,6 +12,7 @@ import {
 import Dropdown from "./Dropdown";
 import { sortGenres } from "../globals/utils";
 import { DivFlexCenter } from "../globals/styles";
+
 
 const Container = styled.div`
   display: flex;
@@ -108,50 +108,41 @@ const Pagination = styled(DivFlexCenter)`
 `;
 
 function Search() {
+  let { q } = useParams();
+  let location = useLocation();  
+  let currentGenre = new URLSearchParams(location.search).get("genre");
+  let history = useHistory();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [filteredResults, setFilteredResults] = useState(null);
-  const [selectedSort, setSelectedSort] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState("");
   const [page, setPage] = useState(1);
+  const [genres, setGenres] = useState([]);
   const [filterActive, setFilterActive] = useState(false);
-
-  //Github Sort Options
-  // const sortOptions = [
-  //   { label: "Best match", sort: "" },
-  //   { label: "Most stars", sort: "stars" },
-  //   { label: "Fewest stars", sort: "stars", order: "asc" },
-  //   { label: "Most forks", sort: "forks" },
-  //   { label: "Fewest forks", sort: "forks", order: "asc" },
-  // ];
-
-  //get params from url
-  let { q } = useParams();
+  const [input, setInput] = useState(q);
+  const [params, setParams] = useState({genre: currentGenre, start: 0, end: 0});
+  const [selectedFilter, setSelectedFilter] = useState(currentGenre);
 
   const fetchData = useCallback(
-    ({ input, sort, order, perPage, pg }) => {
+    ({ input, queryParams }) => {
       setLoading(true);
-
-      //Query Parameters - Reference: https://docs.github.com/en/rest/reference/repos
       const queryTerm = encodeURIComponent(input || q);
-      // const querySort = `${sort ? `&sort=${sort}` : ""}`;
-      // const queryOrder = `${order ? `&order=${order}` : ""}`;
-      // const queryPerPage = `&per_page=${perPage || 30}`;
-      // const queryPage = `&page=${page || 1}`;
-      // const queryString =
-      //   queryTerm + querySort + queryOrder + queryPerPage + queryPage;
 
-      console.log("Github API Search Query: ", queryTerm);
-      let url = `http://127.0.0.1:5000/${queryTerm}`;
+      let url = `http://127.0.0.1:5000/search/${queryTerm}?`;
+
+      if (queryParams?.genre != ""){
+        url = url.concat(`&genre=${queryParams?.genre}`)
+      }
+      if (queryParams?.start>1000 && queryParams?.end<2500){
+        url = url.concat(`&start=${queryParams?.start}&end=${queryParams?.end}`)
+      }
+
+      console.log(url);
+
       fetch(url)
         .then((response) => 
           response.json()
         )
         .then((data) => {
-          let sortedLanguages = sortGenres(data);
-          //add any option as default for dropdown
-          sortedLanguages.unshift({ label: "Any" });
           setData({
             totalCount: data?.totalCount,
             items: data?.documents,
@@ -164,41 +155,50 @@ function Search() {
           setLoading(false);
           setError(true);
         });
+
+      fetch("http://127.0.0.1:5000/genres")
+        .then((response) => 
+          response.json()
+        )
+        .then((data) => {
+          var sortedLanguages = sortGenres(data);
+          sortedLanguages.unshift({ label: "Any" });
+          setGenres(sortedLanguages);
+        })
+        .catch((error) => {
+          alert("error "+error);
+          setLoading(false);
+          setError(true);
+        });
     },
-    [page, q]
+    [page, params, input]
   );
 
-  const handleSubmit = (input) => {
-    setFilteredResults(null);
+  const handleSubmit = () => {
     setPage(1);
-    fetchData({ input: input });
+    routeChange(params);
   };
 
-  const handleFilter = (filter) => {
-    // disables sort dropdown when filter is active (sort requires api call and will not align with filtering options)
-    setFilterActive(false);
-    setFilteredResults(data);
-    
-    if (filter === "clear" || filter === "Any") {
-      setFilterActive(false);
-      setFilteredResults(data);
-    } else {
-      setFilterActive(true);
-      let filteredResults = data?.items?.filter(
-        (item) => item.genres.includes(filter)
-      );
-      setFilteredResults({
-        totalCount: filteredResults.length,
-        items: filteredResults,
-      });
-    }
+  const handleChange = (input) => {
+    setInput(input);
+  };
+
+  const routeChange = (params) => {
+    let path = `/search/${input}?`;
+    console.log(params);
+    if (params?.genre)
+      path = path + `genre=${params?.genre}`;
+    history.push(path);
+  };
+
+  const handleGenreFilter = (value) => {    
+    setParams({...params, genre: value});
+    routeChange({genre: value});
   };
 
   const handlePagination = (direction) => {
     let offset = page * 31;
-    let results = filteredResults
-      ? filteredResults?.totalCount
-      : data?.totalCount || 0;
+    let results = data?.totalCount || 0;
     if (direction === "prev" && page >= 2) {
       setPage(page - 1);
     }
@@ -208,8 +208,8 @@ function Search() {
   };
 
   useEffect(() => {
-    fetchData({ input: q });
-  }, [q, page, fetchData]);
+    fetchData({ input: q, queryParams: {"genre": currentGenre} });
+  }, [q, currentGenre, page, fetchData]);
 
   return (
     <Container id="Search">
@@ -217,38 +217,29 @@ function Search() {
         <IconLink to={`/`}>
           <GiLoveSong />
         </IconLink>
-        <SearchBar placeholder="සොයන්න..." onSubmit={handleSubmit} value={q} />
+        <SearchBar 
+          placeholder="සොයන්න..." 
+          onSubmit={handleSubmit} 
+          value={q} 
+          onInputChange={handleChange}
+        />
       </Header>
       <ResultsWrapper>
-        <Filters
-          data={data}
-          handleFilter={handleFilter}
-          setFilterActive={setFilterActive}
-        />
-        <List>
-          <Dropdowns>
-            {/* <Dropdown
-              onChange={handleFilter}
+        <Dropdowns>
+            <Dropdown
+              onChange={handleGenreFilter}
               selected={selectedFilter}
               setSelected={setSelectedFilter}
-              setFilterActive={setFilterActive}
-              options={data ? data.genres : null}
+              // setFilterActive={setFilterActive}
+              options={genres}
               label={"සංගීත ශෛලීය"}
-            /> */}
-            {/* <Dropdown
-              onChange={fetchData}
-              selected={selectedSort}
-              setSelected={setSelectedSort}
-              options={sortOptions}
-              disabled={filterActive}
-              label={"Sort"}
-            />  */}
+            />
           </Dropdowns>
+        <List>
+          
           <TotalResults>
             ප්‍රතිඵල ගණන -{" "}
-            {filteredResults
-              ? filteredResults?.totalCount
-              : data?.totalCount || 0}{" "}
+            {data?.totalCount || 0}{" "}
             
           </TotalResults>
           {loading ? (
@@ -257,11 +248,7 @@ function Search() {
             </Loading>
           ) : data ? (
             <>
-              <SearchResults
-                filteredResults={filteredResults}
-                fetchData={fetchData}
-                data={data}
-              />
+              <SearchResults data={data} />
               <Pagination>
                 <Icon onClick={() => handlePagination("prev")}>
                   <LeftIcon />

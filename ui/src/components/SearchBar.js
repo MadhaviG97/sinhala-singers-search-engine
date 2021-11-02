@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled, { css } from "styled-components";
 import { FaSearch } from "react-icons/fa";
 import { MdClear } from "react-icons/md";
-import { useHistory, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -45,29 +45,18 @@ const Icon = styled.div`
   `}
 `;
 
-function SearchBar({ value = "", placeholder, onSubmit }) {
+function SearchBar({ value = "", placeholder, onSubmit, onInputChange }) {
   const [input, setInput] = useState(value);
-  const history = useHistory();
 
   const handleInput = (e) => {
     setInput(e.target.value);
+    onInputChange(e.target.value);
   };
 
-  const routeChange = (input) => {
-    let path = `/search/${input}`;
-    history.push(path);
-  };
-
-  //trigger handleSubmit only when enter button is pressed within search input field or search icon is clicked
   const handleKeyPress = (e) => {
-    if (e.key === "Enter" || e.currentTarget.title === "search") {
-      input ? handleSubmit() : alert("Please enter search term to get results");
+    if (e.key === "Enter" || e.currentTarget.title === "සොයන්න") {
+      input ? onSubmit() : alert("Please enter search term to get results");
     }
-  };
-
-  const handleSubmit = () => {
-    routeChange(input);
-    onSubmit(input);
   };
 
   return (

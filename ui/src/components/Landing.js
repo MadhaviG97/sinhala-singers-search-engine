@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import styled, { css } from "styled-components";
 import SearchBar from "./SearchBar";
 import { GiMicrophone as Icon } from "react-icons/gi";
 import { useHistory, withRouter } from "react-router-dom";
-import { FaUserSecret } from "react-icons/fa";
 import { DivFlexCenter } from "../globals/styles";
 
 const Container = styled.div`
@@ -43,15 +42,17 @@ const SecretLI = styled.a`
 
 function Landing() {
   const history = useHistory();
+  const [input, setInput] = useState("");
 
   //Route to Search component on submit and update url params with input value
-  const routeChange = (input) => {
+  const routeChange = () => {
     let path = `/search/${input}`;
     history.push(path);
   };
 
-  //Hidden link to my LinkedIn
-  const LIurl = "https://www.linkedin.com/in/hemeshvpatel/";
+  const handleChange = (input) => {
+    setInput(input);
+  }
 
   return (
     <Container id="Filters">
@@ -59,10 +60,11 @@ function Landing() {
         <Title>
           <Icon />ශ්‍රී ලාංකික ගායක ගායිකාවන්
         </Title>
-        <SearchBar placeholder="සොයන්න..." onSubmit={routeChange} />
-        <SecretLI href={LIurl} target="_blank" rel="noopener noreferrer">
-          <FaUserSecret />
-        </SecretLI>
+        <SearchBar 
+          placeholder="සොයන්න..." 
+          onSubmit={routeChange}
+          onInputChange={handleChange}
+        />
       </Wrapper>
     </Container>
   );

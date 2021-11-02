@@ -45,11 +45,11 @@ const Details = styled.div`
   line-height: 2.5rem;
 `;
 
-function SearchResults({ filteredResults, data }) {
+function SearchResults({ data }) {
   return (
     <Results>
       <List>
-        {(filteredResults ? filteredResults?.items : data?.items || []).map(
+        {(data?.items || []).map(
           (r) => {
             const {
               name,
@@ -57,7 +57,6 @@ function SearchResults({ filteredResults, data }) {
               birth,
               summary
             } = r;
-            // let updatedAt = new Date(updated_at).toDateString();
             return (
               <Repo key={name}>
                 <StyledLink
@@ -75,7 +74,6 @@ function SearchResults({ filteredResults, data }) {
                     {birth || 0}
                   </YearComponent>
                   {
-                    
                     genres.map(
                       (k) => (
                           <GenresComponent key={k}>

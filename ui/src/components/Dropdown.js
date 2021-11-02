@@ -33,32 +33,23 @@ function Dropdown({
   setSelected,
   options,
   label,
-  disabled,
+  // disabled,
 }) {
   const handleSelect = (e) => {
-    let currentSelection = e.currentTarget.value;
-    setSelected(currentSelection);
-    if (label === "Sort") {
-      //Sort needs sort and order params for Github query
-      let dObject = options.filter((o) => o.label === currentSelection)[0];
-      onChange({
-        sort: dObject.sort,
-        order: dObject.order,
-      });
-    } else {
-      onChange(currentSelection);
-    }
+    setSelected(e.currentTarget.value);
+    onChange(e.currentTarget.value);
   };
   if (!options) {
     return null;
   }
+
   return (
     <Container label={label}>
       <DropdownLabel>{`${label}: `}</DropdownLabel>
       <DropdownSelect
         value={selected}
         onChange={handleSelect}
-        disabled={disabled || false}
+        // disabled={disabled || false}
       >
         {options.map((d) => (
           <DropdownOption key={d.label} value={d.label}>
