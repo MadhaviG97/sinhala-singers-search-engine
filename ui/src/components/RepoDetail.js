@@ -2,17 +2,12 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { DivFlexCenter } from "../globals/styles";
 import { BiArrowBack } from "react-icons/bi";
-import {
-  GoStar as StarIcon
-} from "react-icons/go";
 
 import {
   FaBirthdayCake as BirthdayIcon
 } from "react-icons/fa";
 
-import {
-  GiMusicSpell as GiMusicSpell,
-} from "react-icons/gi";
+import { GiMusicSpell } from "react-icons/gi";
 
 import {
   useLocation,
@@ -83,18 +78,6 @@ const Detail = styled.div`
   gap: 1rem;
   font-size: 1rem;
 `;
-const DetailLink = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1rem;
-  text-decoration: none;
-  color: black;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 const Buttons = styled(DivFlexCenter)``;
 
@@ -119,10 +102,11 @@ const BackButton = styled.div`
 function RepoDetail() {
   const location = useLocation();
   const history = useHistory();
+
   if (!location.state) {
     return <Redirect to="/error" />;
   }
-  const { data, updatedAt } = location.state;
+  const { data } = location.state;
   const {
     name,
     genres,

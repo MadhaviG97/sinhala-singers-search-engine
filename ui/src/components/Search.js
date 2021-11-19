@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
 import SearchBar from "./SearchBar";
 import SearchResults from "./SearchResults";
@@ -12,6 +12,8 @@ import {
 import Dropdown from "./Dropdown";
 import { sortGenres } from "../globals/utils";
 import { DivFlexCenter } from "../globals/styles";
+
+import Slider from '@mui/material/Slider';
 
 
 const Container = styled.div`
@@ -52,7 +54,7 @@ const IconLink = styled(Link)`
   ${({ theme }) => css`
     text-decoration: none;
     display: flex;
-    align-items: center;
+    
     font-size: 1.5rem;
     color: ${theme.colors.primary};
   `}
@@ -60,6 +62,7 @@ const IconLink = styled(Link)`
 
 const ResultsWrapper = styled.div`
   display: flex;
+  justify-content: center;
   gap: 2rem;
   padding: 1rem;
   font-size: 0.8rem;
@@ -93,6 +96,18 @@ const Loading = styled(DivFlexCenter)`
 const Dropdowns = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;   
+  gap: 1rem;
+
+  @media screen and (max-width: 800px) {
+    gap: 0;
+    justify-content: space-between;
+  }
+`;
+
+const RangeSelector = styled.div`
+  display: flex;
+  justify-content: flex-end;
   gap: 1rem;
 
   @media screen and (max-width: 800px) {
@@ -111,29 +126,35 @@ function Search() {
   let { q } = useParams();
   let location = useLocation();  
   let currentGenre = new URLSearchParams(location.search).get("genre");
+  let start = new URLSearchParams(location.search).get("start");
+  let end = new URLSearchParams(location.search).get("end");
   let history = useHistory();
+
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [page, setPage] = useState(1);
   const [genres, setGenres] = useState([]);
-  const [filterActive, setFilterActive] = useState(false);
   const [input, setInput] = useState(q);
-  const [params, setParams] = useState({genre: currentGenre, start: 0, end: 0});
-  const [selectedFilter, setSelectedFilter] = useState(currentGenre);
+  const [params, setParams] = useState({genre: currentGenre, start: start, end: end});
+  const [selectedFilter, setSelectedFilter] = useState(currentGenre ? currentGenre : "");
 
-  const fetchData = useCallback(
-    ({ input, queryParams }) => {
+  const [minValue, setMinValue] = useState(1900);
+  const [maxValue, setMaxValue] = useState(2030);
+
+  useEffect(() => {
       setLoading(true);
-      const queryTerm = encodeURIComponent(input || q);
+      const queryTerm = encodeURIComponent(q);
 
       let url = `http://127.0.0.1:5000/search/${queryTerm}?`;
-
-      if (queryParams?.genre != ""){
-        url = url.concat(`&genre=${queryParams?.genre}`)
+      if (currentGenre !== undefined && currentGenre !== null && currentGenre !== "Any"){
+        url = url.concat(`&genre=${currentGenre}`)
       }
-      if (queryParams?.start>1000 && queryParams?.end<2500){
-        url = url.concat(`&start=${queryParams?.start}&end=${queryParams?.end}`)
+      if (start !== undefined && start !== null){
+        url = url.concat(`&start=${start}`)
+      }
+      if (end !== undefined && end !== null){
+        url = url.concat(`&end=${end}`)
       }
 
       console.log(url);
@@ -151,7 +172,7 @@ function Search() {
           setLoading(false);
         })
         .catch((error) => {
-          alert("error "+error);
+          console.log("error "+error);
           setLoading(false);
           setError(true);
         });
@@ -166,13 +187,12 @@ function Search() {
           setGenres(sortedLanguages);
         })
         .catch((error) => {
-          alert("error "+error);
+          console.log("error "+error);
           setLoading(false);
           setError(true);
         });
-    },
-    [page, params, input]
-  );
+
+  }, [q, currentGenre, start, end]);
 
   const handleSubmit = () => {
     setPage(1);
@@ -185,16 +205,32 @@ function Search() {
 
   const routeChange = (params) => {
     let path = `/search/${input}?`;
-    console.log(params);
-    if (params?.genre)
-      path = path + `genre=${params?.genre}`;
+    if (params?.genre !== undefined)
+      path = path + `&genre=${params?.genre}`;
+    if (params?.start !== undefined)
+      path = path + `&start=${params?.start}`;
+    if (params?.end !== undefined)
+      path = path + `&end=${params?.end}`;
+    
     history.push(path);
   };
 
   const handleGenreFilter = (value) => {    
     setParams({...params, genre: value});
-    routeChange({genre: value});
+    if (params?.start !== null && params?.end !== null)
+      routeChange({genre: value, start: params?.start, end: params?.end});
+    else
+      routeChange({genre: value});
   };
+
+  const handleSlider = (e) => {
+    let value = e.target.value;
+    setParams({...params, start: value[0], end: value[1]});
+    if (params?.genre !== null)
+      routeChange({start: value[0], end: value[1], genre: params?.genre});
+    else
+      routeChange({start: value[0], end: value[1]});
+  }
 
   const handlePagination = (direction) => {
     let offset = page * 31;
@@ -207,36 +243,64 @@ function Search() {
     }
   };
 
-  useEffect(() => {
-    fetchData({ input: q, queryParams: {"genre": currentGenre} });
-  }, [q, currentGenre, page, fetchData]);
-
   return (
     <Container id="Search">
       <Header>
         <IconLink to={`/`}>
           <GiLoveSong />
         </IconLink>
+        
+      
+        <Dropdowns>
+          <Dropdown
+            onChange={handleGenreFilter}
+            selected={selectedFilter}
+            setSelected={setSelectedFilter}
+            options={genres}
+            label={"සංගීත ශෛලීය"}
+          />
+
+          {/* <RangeSelector>
+            <p>ක්‍රියාකාරී වසර : {params?.activeYears ? params?.activeYears : ""} සිට</p>
+            <input 
+                type="number" 
+                min={min}
+                max={maxValue}
+                defaultValue={min}
+                onChange={handleSlider} 
+            />
+          </RangeSelector>  */}
+
+          <RangeSelector>
+            <p>ක්‍රියාකාරී වසර: {params?.start ? params?.start : ""} සිට {params?.end ? params?.end : ""} දක්වා</p>
+            <Slider
+              getAriaLabel={() => 'Minimum distance'}
+              defaultValue={[1900, 2030]}
+              onChange={handleSlider}
+              getAriaValueText={() => 'distance'}
+              step={10}
+              min={1900}
+              max={2030}
+              disableSwap
+            />
+          </RangeSelector>
+
+          
+
+
+        </Dropdowns>
+
         <SearchBar 
           placeholder="සොයන්න..." 
           onSubmit={handleSubmit} 
           value={q} 
           onInputChange={handleChange}
         />
-      </Header>
+
+        </Header>
       <ResultsWrapper>
-        <Dropdowns>
-            <Dropdown
-              onChange={handleGenreFilter}
-              selected={selectedFilter}
-              setSelected={setSelectedFilter}
-              // setFilterActive={setFilterActive}
-              options={genres}
-              label={"සංගීත ශෛලීය"}
-            />
-          </Dropdowns>
+        
         <List>
-          
           <TotalResults>
             ප්‍රතිඵල ගණන -{" "}
             {data?.totalCount || 0}{" "}

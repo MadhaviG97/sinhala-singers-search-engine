@@ -25,21 +25,6 @@ const Title = styled(DivFlexCenter)`
   `}
 `;
 
-const SecretLI = styled.a`
-  ${({ theme }) => css`
-    color: ${theme.colors.secondary};
-    font-size: 2rem;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    cursor: pointer;
-
-    &:hover {
-      color: ${theme.colors.primary};
-    }
-  `}
-`;
-
 function Landing() {
   const history = useHistory();
   const [input, setInput] = useState("");

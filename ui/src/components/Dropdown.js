@@ -16,7 +16,6 @@ const DropdownSelect = styled.select`
     border-radius: 10px;
     border: 2px solid ${theme.colors.secondary};
     padding: 0.25rem;
-    margin-bottom: 1rem;
     cursor: pointer;
   `}
 `;
@@ -33,7 +32,6 @@ function Dropdown({
   setSelected,
   options,
   label,
-  // disabled,
 }) {
   const handleSelect = (e) => {
     setSelected(e.currentTarget.value);
@@ -49,7 +47,6 @@ function Dropdown({
       <DropdownSelect
         value={selected}
         onChange={handleSelect}
-        // disabled={disabled || false}
       >
         {options.map((d) => (
           <DropdownOption key={d.label} value={d.label}>

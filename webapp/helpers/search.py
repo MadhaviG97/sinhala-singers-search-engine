@@ -39,7 +39,50 @@ def generalSearch(query):
     )
     return postProcess(res)
 
-def filterByGenre(query, queryParam=None):
+def filterBy(query, genre=None, start=None, end=None):
+    res = es.search(
+        index=INDEX, size=100, body=
+            {
+                "query": {
+                    "bool": {
+                        "must": {
+                            "multi_match": {
+                                "query": query,
+                                "fields": [
+                                    "document.name",
+                                    "document.summary",
+                                    "document.genres"
+                                ]
+                            }
+                        },
+                        "filter": [
+                            {
+                                "term" : {"document.genres": genre}
+                            },
+                            {
+                                "range": {
+                                    "document.birth": {
+                                        "gte": start,
+                                        "lte": end
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "aggs": {
+                    "genres": {
+                        "terms": {
+                            "field": "document.genres.keyword",
+                            "size": 100
+                        }
+                    }
+                }
+            }
+    )
+    return postProcess(res)
+
+def filterByGenre(query, genre=None):
     res = es.search(
         index=INDEX, size=100, body=
             {
@@ -56,7 +99,7 @@ def filterByGenre(query, queryParam=None):
                             }
                         },
                         "filter": {
-                            "term": {"document.genres": queryParam}
+                            "term" : {"document.genres": genre}
                         }
                     }
                 },
@@ -72,7 +115,7 @@ def filterByGenre(query, queryParam=None):
     )
     return postProcess(res)
 
-def filterByBirthYear(query, start, end):
+def filterByActiveYear(query, start=None, end=None):
     res = es.search(
         index=INDEX, size=100, body=
             {
@@ -128,6 +171,25 @@ def allGenres():
             }
     )
     return {"genres": res["aggregations"]['genres']['buckets']}
+
+def allActiveYears():
+    res = es.search(
+        index=INDEX, size=0, body=
+            {
+                "query": {
+                    "match_all": {}
+                },
+                "aggs": {
+                    "birth": {
+                    "terms": {
+                        "field": "document.birth",
+                        "size": 100
+                    }
+                    }
+                }
+            }
+    )
+    return {"active-years": res["aggregations"]['birth']['buckets']}
 
 def postProcess(response):
     common_genres = response["aggregations"]['genres']['buckets']
