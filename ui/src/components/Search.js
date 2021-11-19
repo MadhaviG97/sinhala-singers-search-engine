@@ -12,9 +12,7 @@ import {
 import Dropdown from "./Dropdown";
 import { sortGenres } from "../globals/utils";
 import { DivFlexCenter } from "../globals/styles";
-
 import Slider from '@mui/material/Slider';
-
 
 const Container = styled.div`
   display: flex;
@@ -77,6 +75,34 @@ const TotalResults = styled.div`
     justify-content: left;
   `}
 `;
+
+const NoResult = styled.div`
+  ${({ theme }) => css`
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  `}
+`;
+
+const Suggesion = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: ${theme.colors.secondary};
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 10px;
+      padding: 0.25rem;
+      border: 1px solid ${theme.colors.secondary};
+    }
+  `}
+`;
+
 const List = styled.div`
   display: flex;
   flex-direction: column;
@@ -128,48 +154,69 @@ function Search() {
   let currentGenre = new URLSearchParams(location.search).get("genre");
   let start = new URLSearchParams(location.search).get("start");
   let end = new URLSearchParams(location.search).get("end");
+  let pageNo = parseInt(new URLSearchParams(location.search).get("page"));
   let history = useHistory();
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(pageNo ? pageNo : 1);
   const [genres, setGenres] = useState([]);
   const [input, setInput] = useState(q);
-  const [params, setParams] = useState({genre: currentGenre, start: start, end: end});
+  const [params, setParams] = useState({genre: currentGenre, start: start, end: end, page: pageNo ? pageNo : 1});
   const [selectedFilter, setSelectedFilter] = useState(currentGenre ? currentGenre : "");
 
-  const [minValue, setMinValue] = useState(1900);
-  const [maxValue, setMaxValue] = useState(2030);
-
   useEffect(() => {
-      setLoading(true);
       const queryTerm = encodeURIComponent(q);
 
       let url = `http://127.0.0.1:5000/search/${queryTerm}?`;
       if (currentGenre !== undefined && currentGenre !== null && currentGenre !== "Any"){
         url = url.concat(`&genre=${currentGenre}`)
       }
-      if (start !== undefined && start !== null){
+      if (!isNaN(start) && start !== null){
         url = url.concat(`&start=${start}`)
       }
-      if (end !== undefined && end !== null){
+      if (!isNaN(end) && end !== null){
         url = url.concat(`&end=${end}`)
       }
+      if (!isNaN(pageNo) && pageNo !== null){
+        url = url.concat(`&page=${pageNo}`)
+      } else {
+        url = url.concat(`&page=${1}`)
+      }
 
-      console.log(url);
+      console.log("url", url);
 
       fetch(url)
         .then((response) => 
           response.json()
         )
         .then((data) => {
-          setData({
-            totalCount: data?.totalCount,
-            items: data?.documents,
-            genres: data?.genres
-          });
-          setLoading(false);
+            setLoading(true);
+
+            setData({
+              totalCount: data?.totalCount,
+              items: data?.documents,
+              genres: data?.genres,
+              suggest: data?.suggest
+            });
+
+            fetch("http://127.0.0.1:5000/genres")
+            .then((response) => 
+              response.json()
+            )
+            .then((data) => {
+              var sortedLanguages = sortGenres(data);
+              sortedLanguages.unshift({ label: "Any" });
+              setGenres(sortedLanguages);
+              setLoading(false);
+            })
+            .catch((error) => {
+              console.log("error "+error);
+              setLoading(false);
+              setError(true);
+            });
+                 
         })
         .catch((error) => {
           console.log("error "+error);
@@ -177,22 +224,7 @@ function Search() {
           setError(true);
         });
 
-      fetch("http://127.0.0.1:5000/genres")
-        .then((response) => 
-          response.json()
-        )
-        .then((data) => {
-          var sortedLanguages = sortGenres(data);
-          sortedLanguages.unshift({ label: "Any" });
-          setGenres(sortedLanguages);
-        })
-        .catch((error) => {
-          console.log("error "+error);
-          setLoading(false);
-          setError(true);
-        });
-
-  }, [q, currentGenre, start, end]);
+  }, [q, currentGenre, start, end, pageNo]);
 
   const handleSubmit = () => {
     setPage(1);
@@ -205,12 +237,23 @@ function Search() {
 
   const routeChange = (params) => {
     let path = `/search/${input}?`;
-    if (params?.genre !== undefined)
+    if (data?.suggest !== ""){
+      setInput(data?.suggest);
+      path = `/search/${data?.suggest}?`;
+    }
+      
+    if (data?.suggest === "" && data?.totalCount===0){
+      setInput(input+"*");
+      path = `/search/${input}*?`;
+    }
+
+    if (params?.genre !== undefined && params?.genre !== null)
       path = path + `&genre=${params?.genre}`;
     if (params?.start !== undefined)
       path = path + `&start=${params?.start}`;
     if (params?.end !== undefined)
       path = path + `&end=${params?.end}`;
+    path = path + `&page=${params?.page ? params?.page : 1}`;
     
     history.push(path);
   };
@@ -218,28 +261,31 @@ function Search() {
   const handleGenreFilter = (value) => {    
     setParams({...params, genre: value});
     if (params?.start !== null && params?.end !== null)
-      routeChange({genre: value, start: params?.start, end: params?.end});
+      routeChange({genre: value, start: params?.start, end: params?.end, page: 1});
     else
-      routeChange({genre: value});
+      routeChange({genre: value, page: 1});
   };
 
   const handleSlider = (e) => {
     let value = e.target.value;
     setParams({...params, start: value[0], end: value[1]});
     if (params?.genre !== null)
-      routeChange({start: value[0], end: value[1], genre: params?.genre});
+      routeChange({start: value[0], end: value[1], genre: params?.genre, page: 1});
     else
-      routeChange({start: value[0], end: value[1]});
+      routeChange({start: value[0], end: value[1], page: 1});
   }
 
   const handlePagination = (direction) => {
-    let offset = page * 31;
+    let offset = page * 20;
     let results = data?.totalCount || 0;
+
     if (direction === "prev" && page >= 2) {
       setPage(page - 1);
+      routeChange({start: start, end: end, genre: currentGenre, page: page - 1});
     }
     if (direction === "next" && page > 0 && offset < results) {
       setPage(page + 1);
+      routeChange({start: start, end: end, genre: currentGenre, page: page + 1});
     }
   };
 
@@ -250,7 +296,6 @@ function Search() {
           <GiLoveSong />
         </IconLink>
         
-      
         <Dropdowns>
           <Dropdown
             onChange={handleGenreFilter}
@@ -259,18 +304,6 @@ function Search() {
             options={genres}
             label={"සංගීත ශෛලීය"}
           />
-
-          {/* <RangeSelector>
-            <p>ක්‍රියාකාරී වසර : {params?.activeYears ? params?.activeYears : ""} සිට</p>
-            <input 
-                type="number" 
-                min={min}
-                max={maxValue}
-                defaultValue={min}
-                onChange={handleSlider} 
-            />
-          </RangeSelector>  */}
-
           <RangeSelector>
             <p>ක්‍රියාකාරී වසර: {params?.start ? params?.start : ""} සිට {params?.end ? params?.end : ""} දක්වා</p>
             <Slider
@@ -284,10 +317,6 @@ function Search() {
               disableSwap
             />
           </RangeSelector>
-
-          
-
-
         </Dropdowns>
 
         <SearchBar 
@@ -296,23 +325,50 @@ function Search() {
           value={q} 
           onInputChange={handleChange}
         />
-
         </Header>
       <ResultsWrapper>
-        
         <List>
-          <TotalResults>
-            ප්‍රතිඵල ගණන -{" "}
-            {data?.totalCount || 0}{" "}
-            
-          </TotalResults>
+          {
+            data?.totalCount===0 && data?.suggest !== "" && (
+              <NoResult>
+                <p>ඔබ අදහස් කලේ&nbsp; </p>
+                  <Suggesion onClick={(e) => routeChange({start: start, end: end, genre: currentGenre, page: pageNo})}
+                    >
+                    {data?.suggest || q}
+                  </Suggesion>
+                &nbsp;{"ද?"}
+                
+              </NoResult>
+            ) 
+          }
+          {
+            data?.totalCount===0 && data?.suggest==="" && (
+              <NoResult>
+                <p>ඔබ අදහස් කලේ&nbsp; </p>
+                  <Suggesion onClick={(e) => routeChange({start: start, end: end, genre: currentGenre, page: pageNo})}
+                    >
+                    {data?.suggest || q}{"*"}
+                  </Suggesion>
+                &nbsp;{"ද?"}
+              </NoResult>
+            )
+          }
+          {
+            data?.totalCount!==0 && (
+              <TotalResults>
+                ප්‍රතිඵල ගණන -{" "}
+                {data?.totalCount || 0}{" "}
+                
+              </TotalResults>
+            )
+          }
           {loading ? (
             <Loading>
               <Spinner color={`#cf9fff`} />
             </Loading>
           ) : data ? (
             <>
-              <SearchResults data={data} />
+              
               <Pagination>
                 <Icon onClick={() => handlePagination("prev")}>
                   <LeftIcon />
@@ -324,6 +380,7 @@ function Search() {
                   <RightIcon />
                 </Icon>
               </Pagination>
+              <SearchResults data={data} />
             </>
           ) : null}
         </List>

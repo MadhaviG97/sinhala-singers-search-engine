@@ -5,3 +5,6 @@ service elasticsearch start or systemctl restart elasticsearch.service
 cd ui && npm start
 
 
+TODO: 
+1. change genre language
+2. find a query that matches

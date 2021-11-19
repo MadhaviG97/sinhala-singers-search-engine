@@ -11,26 +11,31 @@ def index(query):
     genre = request.args.get('genre')
     start = request.args.get('start')
     end = request.args.get('end')
+    page = request.args.get('page')
+    
+    print(genre, start, end, page)
 
-    if genre!=None and start!=None and end!=None:
-        res=filterBy(query, genre=genre, start=int(start), end=int(end))
-    elif genre!=None:
-        res=filterByGenre(query, genre=genre)
-    elif activeYears!=None:
-        res=filterByActiveYear(query, start=int(start), end=int(end))
+    if page==None:
+        page=1
     else:
-        res=generalSearch(query)
-    return res
+        page = int(page)
+        
+    if genre!=None and start!=None and end!=None:
+        return filterBy(query, genre=genre, start=int(start), end=int(end), page=page)
+    elif genre!=None:
+        return filterByGenre(query, genre=genre, page=page)
+    elif start!=None and end!=None:
+        return filterByActiveYear(query, start=int(start), end=int(end), page=page)
+    else:
+        return generalSearch(query, page=page)
 
 @app.route("/genres", methods=['GET'])
 def genres():
-    res=allGenres()
-    return res
+    return allGenres()
 
 @app.route("/active-years", methods=['GET'])
 def activeYears():
-    res=allActiveYears()
-    return res
+    return allActiveYears()
 
 if __name__ == "__main__":
     app.run(debug=True)
