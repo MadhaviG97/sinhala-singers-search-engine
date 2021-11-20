@@ -170,7 +170,7 @@ function Search() {
       const queryTerm = encodeURIComponent(q);
 
       let url = `http://127.0.0.1:5000/search/${queryTerm}?`;
-      if (currentGenre !== undefined && currentGenre !== null && currentGenre !== "Any"){
+      if (currentGenre !== undefined && currentGenre !== null && currentGenre !== "සියල්ල"){
         url = url.concat(`&genre=${currentGenre}`)
       }
       if (!isNaN(start) && start !== null){
@@ -207,7 +207,7 @@ function Search() {
             )
             .then((data) => {
               var sortedLanguages = sortGenres(data);
-              sortedLanguages.unshift({ label: "Any" });
+              sortedLanguages.unshift({ label: "සියල්ල" });
               setGenres(sortedLanguages);
               setLoading(false);
             })
@@ -322,7 +322,8 @@ function Search() {
         <SearchBar 
           placeholder="සොයන්න..." 
           onSubmit={handleSubmit} 
-          value={q} 
+          value={q? q: input} 
+          defaultValue={q}
           onInputChange={handleChange}
         />
         </Header>

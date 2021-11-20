@@ -15,9 +15,9 @@ def mustQuery(query):
         "multi_match": {
             "query": query,
             "fields": [
-                "document.name",
-                "document.summary",
-                "document.genres"
+                "name",
+                "summary",
+                "genres"
             ]
         }
     }
@@ -26,9 +26,9 @@ def wildCardQuery(query):
     return {
         "dis_max" : {
             "queries" : [
-                {"wildcard" : { "document.name" : {"value" : query}}},
-                {"wildcard" : { "document.summary" : {"value" : query}}},
-                {"wildcard" : { "document.genres" : {"value" : query}}}
+                {"wildcard" : { "name" : {"value" : query}}},
+                {"wildcard" : { "summary" : {"value" : query}}},
+                {"wildcard" : { "genres" : {"value" : query}}}
             ]
         } 
     }
@@ -38,21 +38,21 @@ def suggestion(query):
         "suggestions" : {
             "text" : query,
             "term" : [
-                {"field" : "document.genres"},
-                {"field" : "document.summary"}
+                {"field" : "genres"},
+                {"field" : "summary"}
             ]
         }
     }
 
 def genreFilter(genre):
     return {
-        "term" : {"document.genres": genre}
+        "term" : {"genres": genre}
     }
 
 def yearFilter(start, end):
     return {
         "range": {
-            "document.birth": {
+            "birth": {
                 "gte": start,
                 "lte": end
             }
@@ -140,13 +140,10 @@ def allGenres():
     res = es.search(
         index=INDEX, size=0, body=
             {
-                "query": {
-                    "match_all": {}
-                },
                 "aggs": {
                     "genres": {
                         "terms": {
-                            "field": "document.genres.keyword",
+                            "field": "genres.keyword",
                             "size": 100
                         }
                     }
@@ -155,31 +152,12 @@ def allGenres():
     )
     return {"genres": res["aggregations"]['genres']['buckets']}
 
-def allActiveYears():
-    res = es.search(
-        index=INDEX, size=0, body=
-            {
-                "query": {
-                    "match_all": {}
-                },
-                "aggs": {
-                    "birth": {
-                        "terms": {
-                            "field": "document.birth",
-                            "size": 100
-                        }
-                    }
-                }
-            }
-    )
-    return {"active-years": res["aggregations"]['birth']['buckets']}
-
 def postProcess(response):
     hits = response["hits"]["hits"]
     totalCount = response["hits"]["total"]["value"]
     search_results = []
     for hit in hits:
-        singer = hit["_source"]["document"]
+        singer = hit["_source"]
         search_results.append(singer)
 
     suggest = ""

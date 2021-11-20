@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { withRouter, Link } from "react-router-dom";
-import { GiCalendarHalfYear as YearIcon } from "react-icons/gi";
-import {BiCategory as CategoryIcon} from "react-icons/bi";
+import { FaBirthdayCake as BirthdayIcon } from "react-icons/fa";
+import { GiMusicSpell } from "react-icons/gi";
 
 const Results = styled.div`
   display: flex;
@@ -70,14 +70,14 @@ function SearchResults({ data }) {
                 <Description>{summary || ""}</Description>
                 <Details>
                   <YearComponent>
-                    <YearIcon />
+                    <BirthdayIcon />
                     {birth || 0}
                   </YearComponent>
                   {
                     genres.map(
                       (k) => (
                           <GenresComponent key={k}>
-                            <CategoryIcon />
+                            <GiMusicSpell />
                             {k || 0}
                           </GenresComponent>
                       )

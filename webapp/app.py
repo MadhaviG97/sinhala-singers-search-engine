@@ -33,9 +33,5 @@ def index(query):
 def genres():
     return allGenres()
 
-@app.route("/active-years", methods=['GET'])
-def activeYears():
-    return allActiveYears()
-
 if __name__ == "__main__":
     app.run(debug=True)

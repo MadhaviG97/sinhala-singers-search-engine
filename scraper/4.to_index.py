@@ -10,13 +10,13 @@ INDEX = os.getenv('INDEX')
 es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 es = Elasticsearch(timeout=30, max_retries=10, retry_on_timeout=True)
 
-with open("scraper/data/sinhala.json") as f:
+with open("data/sinhala.json") as f:
    sinhala = json.load(f)
 
-with open("scraper/configs/mapping.json") as f:
+with open("configs/mapping.json") as f:
    mapping = json.load(f)
 
-with open("scraper/configs/stopwords.txt") as f:
+with open("configs/stopwords.txt") as f:
    stopwords = f.read().strip().split("\n")
 
 def create_index():
@@ -35,8 +35,7 @@ def upload_data():
             {
                 "_index": INDEX,
                 "_id": key,
-                "_source": {
-                    "document": sinhala[key]}
+                "_source": sinhala[key]
             }
             )
         except:

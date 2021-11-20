@@ -29,8 +29,15 @@
       "birth":{
         "type": "integer"
       },
-      "genres":{"type": "text",
-        "analyzer": "sinhala_analyzer" 
+      "genres":{
+        "type": "text",
+        "analyzer": "sinhala_analyzer",
+        "fields": {
+          "keyword": {
+            "ignore_above": 256,
+            "type": "keyword"
+          }
+        }       
       }
     }
   }
