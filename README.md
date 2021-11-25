@@ -48,3 +48,11 @@ As mentioned in the field list the genres field was classified as a text field a
 - If the search term does not have any hits, the query will give a suggestion which can be the correct search term. If the user thinks it is correct, the user can search using that keyword. 
 
 - If there are no suggestions for a particular keyword, the system will suggest the user to do a wildcard search.
+
+
+## Queries
+1. Simple keyword search - ශ්‍රී ලංකා සංගීතඥය
+2. Pagination
+3. Facet search by Genre, birth year
+4. Wildcard search - 
+4. Spell Correction/Suggestion - පෙරේර

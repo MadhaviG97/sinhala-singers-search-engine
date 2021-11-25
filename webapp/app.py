@@ -1,3 +1,4 @@
+from logging import NullHandler
 from elasticsearch import Elasticsearch
 from flask import Flask, request
 from helpers.search import *
@@ -12,21 +13,29 @@ def index(query):
     start = request.args.get('start')
     end = request.args.get('end')
     page = request.args.get('page')
-    
-    print(genre, start, end, page)
 
     if page==None:
         page=1
     else:
         page = int(page)
+    
+    print(start, end, page)
         
     if genre!=None and start!=None and end!=None:
+        print(1)
         return filterBy(query, genre=genre, start=int(start), end=int(end), page=page)
     elif genre!=None:
+        print(2)
         return filterByGenre(query, genre=genre, page=page)
     elif start!=None and end!=None:
-        return filterByActiveYear(query, start=int(start), end=int(end), page=page)
+        if start.isdigit() and end.isdigit():
+            print(3)
+            return filterByActiveYear(query, start=int(start), end=int(end), page=page)
+        else:
+            print(4)
+            return generalSearch(query, page=page)
     else:
+        print(5)
         return generalSearch(query, page=page)
 
 @app.route("/genres", methods=['GET'])

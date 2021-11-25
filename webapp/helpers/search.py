@@ -11,9 +11,24 @@ es = Elasticsearch([{'host': 'localhost', 'port': 9200}])
 es = Elasticsearch(timeout=30, max_retries=10, retry_on_timeout=True)
 
 def mustQuery(query):
+    if query[0]=="\"" and query[-1]=="\"":
+        query = query[1:-1]
+        
+        return {
+            "multi_match": {
+                "query": query.strip(),
+                "fields": [
+                    "name",
+                    "summary",
+                    "genres"
+                ],
+                "type": "phrase"
+            }
+        }
+
     return {
         "multi_match": {
-            "query": query,
+            "query": query.strip(),
             "fields": [
                 "name",
                 "summary",
@@ -62,18 +77,20 @@ def yearFilter(start, end):
 def generalSearch(query, page=1):
     must = preProcess(query)
 
-    res = es.search(
-        index=INDEX, body=
-            {
-                "from": (page-1)*MAX_COUNT+1,
+    body = {
+                "from": (page-1)*MAX_COUNT,
                 "size": MAX_COUNT,
                 "query": {
                     "bool": {
-                        "must": must
+                        "must": [must]
                     }
                 },
                 "suggest": suggestion(query)
             }
+    print(body)
+
+    res = es.search(
+        index=INDEX, body=body
     )
     return postProcess(res)
 
@@ -83,7 +100,7 @@ def filterBy(query, genre=None, start=None, end=None, page=1):
     res = es.search(
         index=INDEX, body=
             {
-                "from": (page-1)*MAX_COUNT+1,
+                "from": (page-1)*MAX_COUNT,
                 "size": MAX_COUNT,
                 "query": {
                     "bool": {
@@ -105,7 +122,7 @@ def filterByGenre(query, genre=None, page=1):
     res = es.search(
         index=INDEX, body=
             {
-               "from": (page-1)*MAX_COUNT+1,
+               "from": (page-1)*MAX_COUNT,
                 "size": MAX_COUNT,
                 "query": {
                     "bool": {
@@ -123,7 +140,7 @@ def filterByActiveYear(query, start=None, end=None, page=1):
     res = es.search(
         index=INDEX, body=
             {
-                "from": (page-1)*MAX_COUNT+1,
+                "from": (page-1)*MAX_COUNT,
                 "size": MAX_COUNT,
                 "query": {
                     "bool": {
@@ -153,6 +170,7 @@ def allGenres():
     return {"genres": res["aggregations"]['genres']['buckets']}
 
 def postProcess(response):
+
     hits = response["hits"]["hits"]
     totalCount = response["hits"]["total"]["value"]
     search_results = []
