@@ -39,7 +39,7 @@ As mentioned in the field list the genres field was classified as a text field a
 
 ## Advanced features
 
-- The search engine is capable of performing phrase queries as expected in the assignment given. 
+- The search engine is capable of performing phrase queries and keyword search as expected in the assignment given. 
 
 - Users can filter the results by the singer’s genres and birth years.
 
@@ -51,8 +51,9 @@ As mentioned in the field list the genres field was classified as a text field a
 
 
 ## Queries
-1. Simple keyword search - ශ්‍රී ලංකා සංගීතඥය
+1. Simple keyword search - ශ්‍රී ලාංකික සිංගර්
 2. Pagination
+3. Phrase query - "ශ්‍රී ලාංකික සිංගර්"
 3. Facet search by Genre, birth year
-4. Wildcard search - 
+4. Wildcard search - ගායක*
 4. Spell Correction/Suggestion - පෙරේර
