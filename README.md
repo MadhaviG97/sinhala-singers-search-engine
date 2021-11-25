@@ -10,7 +10,7 @@
 
 ``service elasticsearch start``
 
-- Active virtual enviornment
+- Active virtual enviornment (do this for each new terminal you use)
 
 ``. venv/bin/activate``
 
@@ -20,7 +20,7 @@
 
 - Start frontend
 
-``cd ui && npm start``
+``cd ui && npm install && npm start``
 
 ## Dataset
 
